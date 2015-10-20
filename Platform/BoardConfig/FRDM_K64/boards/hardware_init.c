@@ -61,7 +61,8 @@
 #include "fsl_interrupt_manager.h"
 #include <stdbool.h>
 
-void hardware_init(void) {
+
+void hardware_init(void){
 
   uint8_t i;
   
@@ -71,6 +72,7 @@ void hardware_init(void) {
   }
   
   SCB->SHCSR |= 7<<16;  
+  
     
   INT_SYS_EnableIRQ(83);
   INT_SYS_EnableIRQ(84);
@@ -90,7 +92,8 @@ void hardware_init(void) {
   
   
   /*Like add     config a pin for ENET PHY Interrupt        */
-  PORTB_PCR9 =  (PORT_PCR_PE_MASK|PORT_PCR_PS_MASK|PORT_PCR_MUX(1)|PORT_PCR_IRQC(8));
+  //PORTB_PCR9 =  (PORT_PCR_PE_MASK|PORT_PCR_PS_MASK|PORT_PCR_MUX(1)|PORT_PCR_IRQC(8));
+  PORTC_PCR13 =  (PORT_PCR_PE_MASK|PORT_PCR_PS_MASK|PORT_PCR_MUX(1)|PORT_PCR_IRQC(8));
   RTC_CR = 0x0000;   //disable RTC OSC
 }
 

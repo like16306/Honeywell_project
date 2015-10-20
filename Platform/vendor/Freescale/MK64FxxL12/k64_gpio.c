@@ -264,6 +264,33 @@ void PORTB_IRQHandler(void)
 {
   
     /*******ETH PHY LINK Check   Like Add*********/
+    /*int phy_reg_temp;
+    volatile int a;
+    mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
+    
+    a = (phy_reg_temp & PHY_INTCTL_LINK_DOWN_FLAG);
+    if(a){ 
+        
+        
+        mico_ethif_down();
+    
+    }
+    
+    a= (phy_reg_temp & PHY_INTCTL_LINK_UP_FLAG);
+    if(a){       
+        if(line_down_reset){    //if link down when power on, reset the MCU
+          line_down_reset = 0;
+          NVIC_SystemReset();         
+        }
+        mico_ethif_up();
+    }*/
+    /**************************/
+    gpio_irq();
+}
+void PORTC_IRQHandler(void)
+{
+  
+    /*******ETH PHY LINK Check   Like Add*********/
     int phy_reg_temp;
     volatile int a;
     mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
@@ -284,13 +311,7 @@ void PORTB_IRQHandler(void)
         }
         mico_ethif_up();
     }
-    //mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
-    //eth_phy_reg_dump(MACNET_PORT, configPHY_ADDRESS);
     /**************************/
-    gpio_irq();
-}
-void PORTC_IRQHandler(void)
-{
     gpio_irq();
 }
 void PORTD_IRQHandler(void)

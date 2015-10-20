@@ -76,7 +76,7 @@ const platform_pin_mapping_t gpio_mapping[] =
   [MICO_RF_LED]                       = {kGpioLED2},
   [BOOT_SEL]                          = {GPIO_PINS_OUT_OF_RANGE}, 
   [MFG_SEL]                           = {GPIO_PINS_OUT_OF_RANGE}, 
-  [EasyLink_BUTTON]                   = {GPIO_MAKE_PIN(HW_GPIOC,  6)}, 
+  [EasyLink_BUTTON]                   = {GPIO_MAKE_PIN(HW_GPIOE,  4)}, 
   //add by jacky for wifi lighting
   [HOME_SWITCH_1]			  = {GPIO_MAKE_PIN(HW_GPIOC,  2)},
   [HOME_SWITCH_2]			  = {GPIO_MAKE_PIN(HW_GPIOC,  7)},

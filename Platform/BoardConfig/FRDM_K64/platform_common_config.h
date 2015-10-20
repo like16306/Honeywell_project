@@ -93,12 +93,12 @@
 #define SPI_BUS_MISO_BANK       HW_GPIOD
 #define SPI_BUS_MOSI_BANK       HW_GPIOD
 #define SPI_BUS_CS_BANK         HW_GPIOD
-#define SPI_IRQ_BANK            HW_GPIOD
+#define SPI_IRQ_BANK            HW_GPIOB
 #define SPI_BUS_CLOCK_PIN       1
 #define SPI_BUS_MISO_PIN        3
 #define SPI_BUS_MOSI_PIN        2
 #define SPI_BUS_CS_PIN          0
-#define SPI_IRQ_PIN             6
+#define SPI_IRQ_PIN             23
 
 #define WL_RESET_BANK           HW_GPIOC
 #define WL_RESET_PIN            4

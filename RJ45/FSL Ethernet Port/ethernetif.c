@@ -159,7 +159,9 @@ extern int line_down_reset;
  * @param netif the already initialized lwip network interface structure
  *        for this ethernetif
  */
-void mico_ethif_low_level_init(char *mac)
+
+//#pragma location = ".text2"
+void mico_ethif_low_level_init(char *mac)@".text2"
 {
   int usData, phy_reg_temp;
 
@@ -234,9 +236,11 @@ void mico_ethif_low_level_init(char *mac)
     line_down_reset = 1;
     mii_write( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, ( PHY_INTCTL_LINK_DOWN_ENABLE | PHY_INTCTL_LINK_UP_ENABLE ) );
     mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
-    PORTB_PCR9 |= PORT_PCR_ISF_MASK;
+    //PORTB_PCR9 |= PORT_PCR_ISF_MASK;
+    PORTC_PCR13 |= PORT_PCR_ISF_MASK;
     msleep(500);
-    INT_SYS_EnableIRQ(60);        //place PHY and GPIO in a certain status
+    INT_SYS_EnableIRQ(61);        //place PHY and GPIO in a certain status
+    //INT_SYS_EnableIRQ(60);
     return;
   }
   /************************************/
@@ -392,9 +396,11 @@ void mico_ethif_low_level_init(char *mac)
   /*    Enable PHY Link Up-Down  Interrupt  *****************Like add     */
   mii_write( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, ( PHY_INTCTL_LINK_DOWN_ENABLE | PHY_INTCTL_LINK_UP_ENABLE ) );
   mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
-  PORTB_PCR9 |= PORT_PCR_ISF_MASK;
+  //PORTB_PCR9 |= PORT_PCR_ISF_MASK;
+  PORTC_PCR13 |= PORT_PCR_ISF_MASK;
   msleep(500);
-  INT_SYS_EnableIRQ(60);        //place PHY and GPIO in a certain status
+  //INT_SYS_EnableIRQ(60);        //place PHY and GPIO in a certain status
+  INT_SYS_EnableIRQ(61);
   
   /*mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_BMSR, &phy_reg_temp);
   mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_BMSR, &phy_reg_temp);

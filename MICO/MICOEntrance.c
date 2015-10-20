@@ -269,7 +269,7 @@ static void _watchdog_reload_timer_handler( void* arg )
 
 static void mico_mfg_test(void)
 {
-  int ret;
+  /*int ret;
   extern int mfg_test(char *);
   
   ret = mfg_test("MXCHIP_CAGE");
@@ -282,7 +282,7 @@ static void mico_mfg_test(void)
       printf("Connect AP FAIL\r\n");
   }
   
-  mico_thread_sleep(MICO_NEVER_TIMEOUT);
+  mico_thread_sleep(MICO_NEVER_TIMEOUT);*/
 }
 
 
@@ -320,8 +320,8 @@ int application_start(void)
   struct tm currentTime;
   mico_rtc_time_t time;
   char wifi_ver[64];
-  mico_log_trace(); 
-#if 1
+  mico_log_trace();  
+#if 1 
   /*Read current configurations*/
   context = ( mico_Context_t *)malloc(sizeof(mico_Context_t) );
   require_action( context, exit, err = kNoMemoryErr );
