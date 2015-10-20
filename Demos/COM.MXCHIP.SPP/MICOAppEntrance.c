@@ -45,6 +45,27 @@ void appRestoreDefault_callback(mico_Context_t *inContext)
   inContext->flashContentInRam.appConfig.remoteServerPort = DEFAULT_REMOTE_SERVER_PORT;
 }
 
+////--------------------------------------------------------------------///
+typedef struct {
+    int dhcpEnable;  // 1=dhcp mode. 0=static IP address mode
+    char local_ip_addr[16]; // valid whetn dhcpEnable ==0.  string like "192.168.1.100"
+    char net_mask[16];      // valid whetn dhcpEnable ==0. string like "255.255.255.0"
+    char gateway_ip_addr[16]; // valid whetn dhcpEnable ==0.  string like "192.168.1.1"
+    char dnsServer_ip_addr[16]; // valid whetn dhcpEnable ==0.  string like "192.168.1.1"
+} ip_settings_t;
+static void add_ethernet(void)
+{
+    ip_settings_t ipset;
+    char mac[6] = {0xc8, 0x93, 0x46, 0x00, 0x01, 0x02};
+
+    memset(&ipset, 0, sizeof(ipset));
+    ipset.dhcpEnable = 1;
+    mico_ethif_init("dm9161c", mac, &ipset);
+    // Eth_Link_up();
+    mico_ethif_up();  //改成在IRQ中触发
+}
+//-------------------------------------------------------------------------
+
 OSStatus MICOStartApplication( mico_Context_t * const inContext )
 {
   app_log_trace();
@@ -74,7 +95,10 @@ OSStatus MICOStartApplication( mico_Context_t * const inContext )
   err = mico_rtos_create_thread(NULL, MICO_APPLICATION_PRIORITY, "UART Recv", uartRecv_thread, STACK_SIZE_UART_RECV_THREAD, (void*)inContext );
   require_noerr_action( err, exit, app_log("ERROR: Unable to start the uart recv thread.") );
 
- /*Local TCP server thread*/
+
+  //add_ethernet();
+  
+  /*Local TCP server thread*/
  if(inContext->flashContentInRam.appConfig.localServerEnable == true){
    err = mico_rtos_create_thread(NULL, MICO_APPLICATION_PRIORITY, "Local Server", localTcpServer_thread, STACK_SIZE_LOCAL_TCP_SERVER_THREAD, (void*)inContext );
    require_noerr_action( err, exit, app_log("ERROR: Unable to start the local server thread.") );

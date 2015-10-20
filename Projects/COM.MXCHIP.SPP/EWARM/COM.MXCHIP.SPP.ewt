@@ -869,6 +869,54 @@
       <name>boardConfig</name>
       <group>
         <name>FRDM_K64F</name>
+        <group>
+          <name>enet</name>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\define.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\define.h</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\enet.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\enet.h</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\eth.h</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\eth_phy.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\eth_phy.h</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\ethernetif.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\FreeRTOSConfig.h</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\macnet.h</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\macnet_hal.h</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\mii.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\mii.h</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\nbuf.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet\nbuf.h</name>
+          </file>
+        </group>
         <file>
           <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\edma.c</name>
         </file>

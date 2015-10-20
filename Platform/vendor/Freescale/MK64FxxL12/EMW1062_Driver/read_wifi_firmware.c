@@ -34,6 +34,7 @@
 #include "MicoPlatform.h"
 #include "platform_common_config.h"
 
+
 const unsigned char wifi_firmware_image[] = {
     /*@-type@*/
     0, 0, 0, 0, 73, 150, 0, 0, 13, 149, 0, 0, 13, 149, 0, 0, 13, 149, 0,
@@ -12195,6 +12196,8 @@ const unsigned char wifi_firmware_image[] = {
     /*@+type@*/
 };
 
+
+
 const unsigned long wifi_firmware_image_size = (unsigned long) sizeof(wifi_firmware_image);
 
 #ifndef MIN
@@ -12216,4 +12219,5 @@ uint32_t platform_get_wifi_image(unsigned char* buffer, uint32_t size, uint32_t 
         memcpy(buffer, &wifi_firmware_image[offset], buffer_size);
     return buffer_size;
 }
+
 

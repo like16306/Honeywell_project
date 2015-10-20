@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=16989111
+Checksum=1436826430
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -30,13 +30,16 @@ Mode=1
 Graph=0
 Symbiont=0
 Exclusions=
+[PlDriver]
+MemConfigValue=D:\IAR_7.3\arm\config\debugger\NXP\LPC540xx_M4.ddf
+[Jet]
+DisableInterrupts=0
+MultiCoreRunAll=0
+[ArmDriver]
+EnableCache=1
 [Trace1]
 Enabled=0
 ShowSource=1
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Count=0
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -44,9 +47,15 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
 [Aliases]
 A0=_ "C:\Freescale\KSDK_1.0.0\platform\system\clock\MK64F12\fsl_clock_K64F12.c" ""
 Count=1
 SuppressDialog=0
-[CallStackLog]
-Enabled=0

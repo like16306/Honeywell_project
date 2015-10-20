@@ -19,6 +19,22 @@
 @REM 
 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\common\bin\cspybat" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\bin\armproc.dll" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\bin\armjlink.dll"  %1 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\bin\armbat.dll" --device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\config\debugger\Freescale\Kxx.dmac" --flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\config\flashloader\Freescale\FlashK64Fxxx128K.board" --backend -B "--endian=little" "--cpu=Cortex-M4F" "--fpu=VFPv4" "-p" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CONFIG\debugger\Freescale\MK64FN1M0xxx12.ddf" "--semihosting" "--device=MK64FN1M0xxx12" "--drv_communication=USB0" "--jlink_speed=auto" "--jlink_initial_speed=32" "--jlink_reset_strategy=0,0" "--drv_catch_exceptions=0x000" "--drv_swo_clock_setup=72000000,0,2000000" 
+@echo off 
 
+if not "%1" == "" goto debugFile 
 
+@echo on 
+
+"D:\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\b45112\Desktop\MICO-Freescale(20150728)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.general.xcl" --backend -f "C:\Users\b45112\Desktop\MICO-Freescale(20150728)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.driver.xcl" 
+
+@echo off 
+goto end 
+
+:debugFile 
+
+@echo on 
+
+"D:\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\b45112\Desktop\MICO-Freescale(20150728)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.general.xcl" "--debug_file=%1" --backend -f "C:\Users\b45112\Desktop\MICO-Freescale(20150728)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.driver.xcl" 
+
+@echo off 
+:end
