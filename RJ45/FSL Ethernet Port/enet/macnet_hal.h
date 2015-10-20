@@ -8,12 +8,13 @@
 #define MICREL_PHY               0
 #define NATIONAL_PHY             1
 
+
 /******************************************************************************/
 /***********************TWR K60 + IAR******************************************/
 /******************************************************************************/
 
 /*specific for Kinetis + IAR compiler*/
-#if (TWR_K60N512 && IAR)
+#if defined (CPU_MK64FN1M0VMD12)
 
 /*MAC-NET version used in this MCU/MPU*/
 #define MACNET_VERSION           MACNET_ENHANCED_V2             
@@ -35,10 +36,8 @@
 
 #define NOP_ASM  asm( "NOP" )
 
-#ifdef TWR_K60N512
+#if defined (CPU_MK64FN1M0VMD12)
 #define ETH_PHY  MICREL_PHY
-#elif (NEWTON_256 || NEWTON_144)
-#define ETH_PHY  NATIONAL_PHY
 #else
 #error "No PHY defined"
 #endif

@@ -75,7 +75,7 @@ uint8_t
 enet_hash_address(const uint8_t*);
 
 void
-enet_set_address (int, const uint8_t*);
+enet_set_address (int, uint8_t*);
 
 void
 enet_reset (int);

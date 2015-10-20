@@ -43,8 +43,9 @@
  * something that better describes your network interface.
  */
 
-////#include "lwip/opt.h"
 #include "FreeRTOSConfig.h"
+#include "fsl_device_registers.h"
+#include "fsl_interrupt_manager.h"
 
 #define portCHAR                           char
 #define portFLOAT                         float
@@ -52,30 +53,14 @@
 #define portBASE_TYPE                long
 #define portLONG                 long
 #define portSHORT               short
-#define uint32_t   u32_t
-#define uint8_t    u8_t
+//#define uint32_t   uint32_t
+//#define uint8_t    uint8_t
 #define TRUE  0
 #define FALSE 1
 #define pdFALSE 0
 
 
 #if 1 /* ready */
-
-////#include "lwip/def.h"
-////#include "lwip/mem.h"
-////#include "lwip/pbuf.h"
-////#include "lwip/sys.h"
-////#include <lwip/stats.h>
-////#include <lwip/snmp.h>
-//#include "netif/etharp.h"
-//#include "netif/ppp_oe.h"
-
-#if 0
-/* Kernel includes. */
-#include "FreeRTOS.h"
-#include "semphr.h"
-#include "task.h"
-#endif
 
 #include "common.h"
 /* Standard library includes. */
@@ -86,6 +71,8 @@
 #include "enet.h"
 #include "mii.h"
 #include "macnet.h"/*register definition*/
+
+#include "MICORTOS.h"
 
 /* Define those to better describe your network interface. */
 #define IFNAME0 'p'
@@ -134,10 +121,10 @@ static NBUF *xENETRxDescriptors;
 /* The DMA buffers.  These are char arrays to allow them to be alligned correctly. */
 static unsigned portBASE_TYPE uxNextRxBuffer = 0, uxNextTxBuffer = 0;
 
-#if 0
+#if 1
 /* Semaphores used by the ENET interrupt handler to wake the handler task. */
-static xSemaphoreHandle xRxENETSemaphore;
-static xSemaphoreHandle xTxENETSemaphore;
+static mico_semaphore_t xRxENETSemaphore;
+static mico_semaphore_t xTxENETSemaphore;
 #endif
 
 extern int periph_clk_khz;
@@ -157,12 +144,9 @@ struct ethernetif {
 
 /* Standard lwIP netif handlers. */
 static void prvInitialiseENETBuffers( void );
-static void low_level_init( struct netif *netif );
-//static err_t low_level_output(struct netif *netif, struct pbuf *p);
-static struct pbuf *low_level_input(struct netif *netif);
-
-/* Forward declarations. */
-static void  ethernetif_input(/*FSL:struct netif *netif*/void *pParams);
+void mico_ethif_low_level_init(char *mac);
+int mico_ethif_low_level_output(uint8_t *buf, int len);
+int mico_ethif_low_level_input(uint8_t *buf, int maxlen);
 
 /**
  * In this function, the hardware should be initialized.
@@ -171,13 +155,9 @@ static void  ethernetif_input(/*FSL:struct netif *netif*/void *pParams);
  * @param netif the already initialized lwip network interface structure
  *        for this ethernetif
  */
- void mico_ethif_low_level_init(char *mac)
+void mico_ethif_low_level_init(char *mac)
 {
-/*unsigned portLONG*/ int usData;
-const unsigned portCHAR ucMACAddress[6] = 
-{
-  configMAC_ADDR0, configMAC_ADDR1,configMAC_ADDR2,configMAC_ADDR3,configMAC_ADDR4,configMAC_ADDR5
-};
+  int usData, phy_reg_temp;
 
 //FSL:struct ethernetif *ethernetif = netif->state;
 #if (MACNET_PORT==0)
@@ -185,37 +165,18 @@ const unsigned portCHAR ucMACAddress[6] =
 #else
   volatile macnet_t *enet = (macnet_t *)(MACNET_BASE_PTR+MAC_NET_OFFSET);
 #endif
-  
-#if 0
-  /* set MAC hardware address length */
-  netif->hwaddr_len = ETHARP_HWADDR_LEN;
-
-  /* set MAC hardware address */
-  netif->hwaddr[0] = configMAC_ADDR0;
-  netif->hwaddr[1] = configMAC_ADDR1;
-  netif->hwaddr[2] = configMAC_ADDR2;
-  netif->hwaddr[3] = configMAC_ADDR3;
-  netif->hwaddr[4] = configMAC_ADDR4;
-  netif->hwaddr[5] = configMAC_ADDR5;
-
-  /* maximum transfer unit */
-  netif->mtu = configENET_MAX_PACKET_SIZE-20;
-  
-  /* device capabilities */
-  /* don't set NETIF_FLAG_ETHARP if this device is not an ethernet one */
-  netif->flags = NETIF_FLAG_BROADCAST | NETIF_FLAG_ETHARP | NETIF_FLAG_LINK_UP;
-#endif
 
   /* Do whatever else is needed to initialize interface. */  
-  
   ENABLE_MAC_NET;        
         
   prvInitialiseENETBuffers();
   
-#if 0
+#if 1
   /*FSL: create semaphores*/
-  vSemaphoreCreateBinary( xRxENETSemaphore );
-  vSemaphoreCreateBinary( xTxENETSemaphore );
+  mico_rtos_init_semaphore(&xRxENETSemaphore, 1);
+  mico_rtos_set_semaphore(&xRxENETSemaphore);
+  mico_rtos_init_semaphore(&xTxENETSemaphore, 1);
+  mico_rtos_set_semaphore(&xTxENETSemaphore);
 #endif
 
   /* Set the Reset bit and clear the Enable bit */
@@ -231,8 +192,11 @@ const unsigned portCHAR ucMACAddress[6] =
   mii_init(MACNET_PORT, periph_clk_khz/1000/*MHz*/);       
         
   //enet_interrupt_routine
-  ENET_INTERRUPTS_ENABLE;
-        
+  INT_SYS_EnableIRQ(ENET_Transmit_IRQn);/*ENET xmit interrupt*/                  
+  INT_SYS_EnableIRQ(ENET_Receive_IRQn);/*ENET rx interrupt*/                   
+  INT_SYS_EnableIRQ(ENET_Error_IRQn);/*ENET error and misc interrupts*/ 
+
+#if 0   //already done in hardware_init.c
   /*
    * Make sure the external interface signals are enabled
    */
@@ -243,11 +207,13 @@ const unsigned portCHAR ucMACAddress[6] =
 #else
   ENET_RMII_MODE_PINS;
 #endif   
-    
+#endif
+  
   /* Can we talk to the PHY? */
   do
   {
     //vTaskDelay( netifLINK_DELAY );	//cutworth, need to change to something from Mico OS
+    msleep(500);
     usData = 0xffff;
     mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_PHYIDR1, &usData );
         
@@ -260,6 +226,7 @@ const unsigned portCHAR ucMACAddress[6] =
   do
   {
     //vTaskDelay( netifLINK_DELAY );	//cutworth, need to change to something from Mico OS
+    msleep(500);
     mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_BMSR, &usData );
   } while( !( usData & PHY_BMSR_AN_COMPLETE ) );
 
@@ -274,7 +241,7 @@ const unsigned portCHAR ucMACAddress[6] =
   enet->gaur = 0;
   
   /* Set the Physical Address for the selected ENET */
-  enet_set_address( MACNET_PORT, ucMACAddress );
+  enet_set_address( MACNET_PORT, (uint8_t *)mac );
         
 #if configUSE_MII_MODE        
   /* Various mode/status setup. */
@@ -395,10 +362,28 @@ const unsigned portCHAR ucMACAddress[6] =
 
   /* Indicate that there have been empty receive buffers produced */
   enet->rdar = MACNET_RDAR_RDAR_MASK;
+  
+  
+  /*    Enable PHY Link Up-Down  Interrupt  *****************Like add     */
+  mii_write( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, ( PHY_INTCTL_LINK_DOWN_ENABLE | PHY_INTCTL_LINK_UP_ENABLE ) );
+  mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
+  PORTB_PCR9 |= PORT_PCR_ISF_MASK;
+  msleep(500);
+  INT_SYS_EnableIRQ(60);        //place PHY and GPIO in a certain status
+  
+  /*mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_BMSR, &phy_reg_temp);
+  mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_BMSR, &phy_reg_temp);
+  mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_BMSR, &phy_reg_temp);
+  
+  mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
+  mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
+  mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp); 
+  
+  eth_phy_reg_dump(MACNET_PORT, configPHY_ADDRESS);*/           //test code
+  
+  
+  mico_ethif_up();
 
- //// if (EthStatus == ETH_SUCCESS) {
-	  mico_ethif_up();
- //// }
 }
 
 /**
@@ -416,11 +401,8 @@ const unsigned portCHAR ucMACAddress[6] =
  *       to become availale since the stack doesn't retry to send a packet
  *       dropped because of memory failure (except for the TCP timers).
  */
- int mico_ethif_low_level_output/*(struct netif *netif, struct pbuf *p)*/(uint8_t *buf, int len)
+int mico_ethif_low_level_output(uint8_t *buf, int len)
 {
-//FSL:  struct ethernetif *ethernetif = netif->state;
-  uint16_t l = 0;
-  struct pbuf *q;
   unsigned char *pcTxData = NULL;
   portBASE_TYPE i;
 #if (MACNET_PORT==0)
@@ -442,6 +424,7 @@ const unsigned portCHAR ucMACAddress[6] =
     {
       /* Wait for the buffer to become available. */
       //vTaskDelay( netifBUFFER_WAIT_DELAY );	//cutworth, need something from Mico OS for the delay
+      msleep(10);
     }
     else
     {
@@ -454,29 +437,17 @@ const unsigned portCHAR ucMACAddress[6] =
   {
     /* For break point only. */
     NOP_ASM;
-
-   // return ERR_BUF;
     return -1;
   }
   else
   { 
-	  memcpy(&pcTxData[l], buf, len);
-#if 0
-    for(q = p; q != NULL; q = q->next) 
-    {
-      /* Send the data from the pbuf to the interface, one pbuf at a
-         time. The size of the data in each pbuf is kept in the ->len
-         variable. */
-      memcpy( &pcTxData[l], (u8_t*)q->payload, q->len );
-      l += q->len;
-    }    
-#endif
+     memcpy(pcTxData, buf, len);
   }
   
   //signal that packet should be sent();
   
   /* Setup the buffer descriptor for transmission */
-  xENETTxDescriptors[ uxNextTxBuffer ].length = REVERSE16(l);//nbuf->length + ETH_HDR_LEN;
+  xENETTxDescriptors[ uxNextTxBuffer ].length = REVERSE16(len);//nbuf->length + ETH_HDR_LEN;
   xENETTxDescriptors[ uxNextTxBuffer ].status |= (TX_BD_R | TX_BD_L);
   
   uxNextTxBuffer++;
@@ -490,21 +461,20 @@ const unsigned portCHAR ucMACAddress[6] =
   //pbuf_header(p, ETH_PAD_SIZE); /* reclaim the padding word */
 #endif
 #endif
-  
-  ////LINK_STATS_INC(link.xmit);
 
   /* only one task can be here. wait until pkt is sent, then go ahead */
   /* semaphore released inside isr */
   /*start expiring semaphore: no more than 3 ticks*/
   /*no blocking code*/
-  //xSemaphoreTake( xTxENETSemaphore, 3/*1/portTICK_RATE_MS*//*portMAX_DELAY*/);	//how to interact with ISR?
+  mico_rtos_get_semaphore( &xTxENETSemaphore, 100);	//how to interact with ISR?
     
   /* Request xmit process to MAC-NET */
   enet->tdar = MACNET_TDAR_TDAR_MASK;
-    
-  //return ERR_OK;
+
   return 0;
 }
+
+
 #if configENET_RX_SINGLE_BUFFER
 /**
  * Should allocate a pbuf and transfer the bytes of the incoming
@@ -514,11 +484,9 @@ const unsigned portCHAR ucMACAddress[6] =
  * @return a pbuf filled with the received packet (including MAC header)
  *         NULL on memory error
  */
-static struct pbuf * low_level_input/*(struct netif *netif)*/(uint8_t *buf, int maxlen)
+int mico_ethif_low_level_input(uint8_t *buf, int maxlen)
 {
-  u32_t l = 0;
-  struct pbuf *p, *q;
-  u16_t len;
+  uint16_t len;
   
 #if (MACNET_PORT==0)
   volatile macnet_t *enet = (macnet_t *)MACNET_BASE_PTR;
@@ -526,12 +494,7 @@ static struct pbuf * low_level_input/*(struct netif *netif)*/(uint8_t *buf, int 
   volatile macnet_t *enet = (macnet_t *)(MACNET_BASE_PTR+MAC_NET_OFFSET);
 #endif
   
-  u8_t *data_temp;
-
-  ( void ) netif;
-  
-  l = 0;
-  p = NULL;
+  uint8_t *data_temp;
   
   /* Obtain the size of the packet and put it into the "len"
      variable. */
@@ -544,47 +507,13 @@ static struct pbuf * low_level_input/*(struct netif *netif)*/(uint8_t *buf, int 
      len += ETH_PAD_SIZE; /* allow room for Ethernet padding */
      #endif
      #endif
-
-     /* We allocate a pbuf chain of pbufs from the pool. */
-     p = pbuf_alloc(PBUF_RAW, len, PBUF_POOL);
-  
-     if (p != NULL) 
-     {
-        #if (ENET_HARDWARE_SHIFT==0)
-        #if ETH_PAD_SIZE
-        pbuf_header(p, -ETH_PAD_SIZE); /* drop the padding word */
-        #endif
-        #endif
-
-        /* We iterate over the pbuf chain until we have read the entire
-         * packet into the pbuf. */
-        for(q = p; q != NULL; q = q->next) 
-        {
-           /* Read enough bytes to fill this pbuf in the chain. The
-            * available data in the pbuf is given by the q->len
-            * variable.
-            * This does not necessarily have to be a memcpy, you can also preallocate
-            * pbufs for a DMA-enabled MAC and after receiving truncate it to the
-            * actually received size. In this case, ensure the tot_len member of the
-            * pbuf is the sum of the chained pbuf len members.
-            */
-            data_temp = (u8_t *)REVERSE32((u32_t)xENETRxDescriptors[ uxNextRxBuffer ].data);
-            memcpy((u8_t*)q->payload, &( data_temp[l] ), q->len);
-            l = l + q->len;
-        }
-
-        #if (ENET_HARDWARE_SHIFT==0)
-        #if ETH_PAD_SIZE
-        pbuf_header(p, ETH_PAD_SIZE); /* reclaim the padding word */
-        #endif
-        #endif
-        LINK_STATS_INC(link.recv);        
-     }
-     else
-     {
-        //drop packet();
-        LINK_STATS_INC(link.memerr);
-        LINK_STATS_INC(link.drop);     
+     
+     data_temp = (uint8_t *)REVERSE32((uint32_t)xENETRxDescriptors[ uxNextRxBuffer ].data);
+     
+     if ((len > 0) && (len <= maxlen)) {
+        memcpy(buf, data_temp, len);
+     } else {
+        len = 0;
      }
     
      //acknowledge that packet has been read();
@@ -599,13 +528,11 @@ static struct pbuf * low_level_input/*(struct netif *netif)*/(uint8_t *buf, int 
      }
   } 
   
-  return p;  
+  return len;  
 }
 #else
-int mico_ethif_low_level_input/*(struct netif *netif)*/(uint8_t *buf, int maxlen)
+int mico_ethif_low_level_input(uint8_t *buf, int maxlen)
 {
-    uint16_t l, temp_l;
-    struct pbuf *first_pbuf,*next_pbuf,*q;
     uint16_t len;
 #if (MACNET_PORT==0)
   volatile macnet_t *enet = (macnet_t *)MACNET_BASE_PTR;
@@ -613,12 +540,11 @@ int mico_ethif_low_level_input/*(struct netif *netif)*/(uint8_t *buf, int maxlen
   volatile macnet_t *enet = (macnet_t *)(MACNET_BASE_PTR+MAC_NET_OFFSET);
 #endif
     uint8_t *data_temp;
-    uint8_t more_pkts, processing_error;
+    uint8_t more_pkts;
 
   //// (void)netif;
 
     more_pkts = TRUE;
-    processing_error = FALSE;
 
     /*initial pkt handling*/
 	if (!(xENETRxDescriptors[uxNextRxBuffer].status & RX_BD_E))/*if pkt is filled*/
@@ -629,54 +555,22 @@ int mico_ethif_low_level_input/*(struct netif *netif)*/(uint8_t *buf, int maxlen
 			if (xENETRxDescriptors[uxNextRxBuffer].status & (RX_BD_LG | RX_BD_NO | RX_BD_CR | RX_BD_OV))
 			{
 				/*wrong packet*/
-				//LINK_STATS_INC(link.memerr);
-				//LINK_STATS_INC(link.drop);
 				goto exit_rx_pkt;
 			}
 			else
 			{
 				len = REVERSE16(xENETRxDescriptors[uxNextRxBuffer].length);
-				//LINK_STATS_INC(link.recv);
 			}
 		}
 		else/*if not L bit, then buffer's length*/
 			len = configENET_RX_BUFFER_SIZE;
 
 		data_temp = (uint8_t *)REVERSE32((uint32_t)xENETRxDescriptors[uxNextRxBuffer].data);
-		memcpy(buf, &(data_temp[l]), len);
-#if 0
-		if ((first_pbuf = pbuf_alloc(PBUF_RAW, len, PBUF_POOL)) != NULL)
-		{
-			/*get data*/
-			l = 0;
-			temp_l = 0;
-			/* We iterate over the pbuf chain until we have read the entire
-		   * packet into the pbuf. */
-			for (q = first_pbuf; q != NULL; q = q->next)
-			{
-				/* Read enough bytes to fill this pbuf in the chain. The
-			* available data in the pbuf is given by the q->len
-			* variable.
-			* This does not necessarily have to be a memcpy, you can also preallocate
-			* pbufs for a DMA-enabled MAC and after receiving truncate it to the
-			* actually received size. In this case, ensure the tot_len member of the
-			* pbuf is the sum of the chained pbuf len members.
-			*/
-				temp_l = LWIP_MIN(len, LWIP_MEM_ALIGN_SIZE(PBUF_POOL_BUFSIZE));
-				data_temp = (u8_t *)REVERSE32((u32_t)xENETRxDescriptors[uxNextRxBuffer].data);
-				memcpy((u8_t*)q->payload, &(data_temp[l]), temp_l);
-				l += temp_l;
-				len -= temp_l;
-			}
-		}
-		else
-		{
-			/*wrong buffers*/
-			LINK_STATS_INC(link.memerr);
-			LINK_STATS_INC(link.drop);
-			processing_error = TRUE;
-		}
-#endif
+                
+                if((len > 0) && (len < maxlen))
+		  memcpy(buf, data_temp), len);
+                else
+                  len = 0;
 	exit_rx_pkt:
 		xENETRxDescriptors[uxNextRxBuffer++].status |= RX_BD_E;/*consumed pkt*/
 		enet->rdar = MACNET_RDAR_RDAR_MASK;
@@ -686,7 +580,7 @@ int mico_ethif_low_level_input/*(struct netif *netif)*/(uint8_t *buf, int maxlen
 	else
 		return -1; // (struct pbuf *)NULL;/*FSL: special NULL case*/
 
-    /*more pkts handling*/	//cutworth, should I handle more packets like this?
+    /*more pkts handling*/	
     while(more_pkts)
     {
        //if(!(xENETRxDescriptors[ uxNextRxBuffer ].status & RX_BD_E) )
@@ -698,8 +592,6 @@ int mico_ethif_low_level_input/*(struct netif *netif)*/(uint8_t *buf, int maxlen
           if( xENETRxDescriptors[ uxNextRxBuffer ].status & (RX_BD_LG|RX_BD_NO|RX_BD_CR|RX_BD_OV) )
           {
              /*wrong packet*/
-             //LINK_STATS_INC(link.memerr);
-             //LINK_STATS_INC(link.drop);
              goto exit_rx_pkt2;
           }
           else
@@ -707,53 +599,17 @@ int mico_ethif_low_level_input/*(struct netif *netif)*/(uint8_t *buf, int maxlen
              len = REVERSE16(xENETRxDescriptors[ uxNextRxBuffer ].length);
              /*buffer with L bit has total frame's length instead of remaining bytes from frame's lenght*/
              len %= configENET_RX_BUFFER_SIZE;
-             //LINK_STATS_INC(link.recv);
           }
        }
        else/*if not L bit, then buffer's length*/
           len = configENET_RX_BUFFER_SIZE;
 
-	   data_temp = (u8_t *)REVERSE32((u32_t)xENETRxDescriptors[uxNextRxBuffer].data);
-	   memcpy((u8_t*)buf, &(data_temp[l]), len);
-
-#if 0       
-       if( ((next_pbuf = pbuf_alloc(PBUF_RAW, len, PBUF_POOL)) != NULL) && (!processing_error) )
-       {
-        /*get data*/
-        
-        l = 0;
-        temp_l = 0;    
-
-        /* We iterate over the pbuf chain until we have read the entire
-         * packet into the pbuf. */
-        for(q = next_pbuf; q != NULL; q = q->next) 
-        {
-           /* Read enough bytes to fill this pbuf in the chain. The
-            * available data in the pbuf is given by the q->len
-            * variable.
-            * This does not necessarily have to be a memcpy, you can also preallocate
-            * pbufs for a DMA-enabled MAC and after receiving truncate it to the
-            * actually received size. In this case, ensure the tot_len member of the
-            * pbuf is the sum of the chained pbuf len members.
-            */
-            temp_l = LWIP_MIN(len, LWIP_MEM_ALIGN_SIZE(PBUF_POOL_BUFSIZE));
-            data_temp = (u8_t *)REVERSE32((u32_t)xENETRxDescriptors[ uxNextRxBuffer ].data);
-            memcpy((u8_t*)q->payload, &( data_temp[l] ), temp_l);
-            l += temp_l;
-            len -= temp_l;
-        }
-         
-        /*link pbufs*/
-        pbuf_cat(first_pbuf,next_pbuf);
-       }
-       else
-       {
-           /*wrong buffer: out of lwip buffers*/
-           LINK_STATS_INC(link.memerr);
-           LINK_STATS_INC(link.drop);
-           processing_error = TRUE;
-       }
-#endif
+      data_temp = (uint8_t *)REVERSE32((uint32_t)xENETRxDescriptors[uxNextRxBuffer].data);
+           
+      if((len > 0)&&(len < maxlen))
+	memcpy((uint8_t*)buf, data_temp[0], len);
+      else
+        len = 0;
        exit_rx_pkt2:
            xENETRxDescriptors[ uxNextRxBuffer++ ].status |= RX_BD_E;/*consumed pkt*/
            enet->rdar = MACNET_RDAR_RDAR_MASK;
@@ -763,124 +619,6 @@ int mico_ethif_low_level_input/*(struct netif *netif)*/(uint8_t *buf, int maxlen
     }
     
 	return 0;// first_pbuf;
-}
-#endif
-/**
- * This function should be called when a packet is ready to be read
- * from the interface. It uses the function low_level_input() that
- * should handle the actual reception of bytes from the network
- * interface. Then the type of the received packet is determined and
- * the appropriate input function is called.
- *
- * @param netif the lwip network interface structure for this ethernetif
- */
-#if 0
-static void ethernetif_input(void *pParams)
-{
-//FSL:  struct ethernetif *ethernetif;
-  struct netif *netif;
-  struct eth_hdr *ethhdr;
-  struct pbuf *p;
-
-//FSL:  ethernetif = netif->state;
-  netif = (struct netif*) pParams;
-
-  for( ;; )
-  {  
-    do
-    {
-      /* move received packet into a new pbuf */
-      p = low_level_input(netif);
-      /* no packet could be read, silently ignore this */
-      if (p == NULL)
-      {
-	/* No packet could be read.  Wait a for an interrupt to tell us
-	   there is more data available. */
-	xSemaphoreTake( xRxENETSemaphore, /*netifBLOCK_TIME_WAITING_FOR_INPUT*/portMAX_DELAY );        
-      }
-    }while( p == NULL );  
-    /* points to packet payload, which starts with an Ethernet header */
-    ethhdr = p->payload;
-
-    switch (htons(ethhdr->type)) 
-    {
-      /* IP or ARP packet? */
-      case ETHTYPE_IP:
-      case ETHTYPE_ARP:
-    #if PPPOE_SUPPORT
-      /* PPPoE packet? */
-      case ETHTYPE_PPPOEDISC:
-      case ETHTYPE_PPPOE:
-    #endif /* PPPOE_SUPPORT */
-        /* full packet send to tcpip_thread to process */
-        if (netif->input(p, netif)!=ERR_OK)
-         { LWIP_DEBUGF(NETIF_DEBUG, ("ethernetif_input: IP input error\n"));
-           pbuf_free(p);
-           p = NULL;
-         }
-        break;
-    
-      default:
-        pbuf_free(p);
-        p = NULL;
-        break;
-    }
-  }
-}
-#endif
-/**
- * Should be called at the beginning of the program to set up the
- * network interface. It calls the function low_level_init() to do the
- * actual setup of the hardware.
- *
- * This function should be passed as a parameter to netif_add().
- *
- * @param netif the lwip network interface structure for this ethernetif
- * @return ERR_OK if the loopif is initialized
- *         ERR_MEM if private data couldn't be allocated
- *         any other err_t on error
- */
-#if 0
-err_t ethernetif_init(struct netif *netif)
-{
-  struct ethernetif *ethernetif;
-
-  LWIP_ASSERT("netif != NULL", (netif != NULL));
-    
-  ethernetif = mem_malloc(sizeof(struct ethernetif));
-  if (ethernetif == NULL) {
-    LWIP_DEBUGF(NETIF_DEBUG, ("ethernetif_init: out of memory\n"));
-    return ERR_MEM;
-  }
-
-#if LWIP_NETIF_HOSTNAME
-  /* Initialize interface hostname */
-  netif->hostname = "lwip";
-#endif /* LWIP_NETIF_HOSTNAME */
-
-  /*
-   * Initialize the snmp variables and counters inside the struct netif.
-   * The last argument should be replaced with your link speed, in units
-   * of bits per second.
-   */
-  NETIF_INIT_SNMP(netif, snmp_ifType_ethernet_csmacd, LINK_SPEED_OF_YOUR_NETIF_IN_BPS);
-
-  netif->state = ethernetif;
-  netif->name[0] = IFNAME0;
-  netif->name[1] = IFNAME1;
-  /* We directly use etharp_output() here to save a function call.
-   * You can instead declare your own function an call etharp_output()
-   * from it if you have to do some checks before sending (e.g. if link
-   * is available...) */
-  netif->output = etharp_output;
-  netif->linkoutput = low_level_output;
-  
-  ethernetif->ethaddr = (struct eth_addr *)&(netif->hwaddr[0]);
-  
-  /* initialize the hardware */
-  low_level_init(netif);
-
-  return ERR_OK;
 }
 #endif
 
@@ -957,32 +695,38 @@ unsigned char *pcBufPointer;
 }
 /*-----------------------------------------------------------*/
 
+
 ISR_PREFIX void vENETISRHandler( void )
 {
-unsigned long ulEvent;
-portBASE_TYPE xHighPriorityTaskWoken = pdFALSE;
+  unsigned long eir;
+  unsigned long eimr;
+  unsigned long ulEvent;
+//portBASE_TYPE xHighPriorityTaskWoken = pdFALSE;
 #if (MACNET_PORT==0)
   volatile macnet_t *enet = (macnet_t *)MACNET_BASE_PTR;
 #else
   volatile macnet_t *enet = (macnet_t *)(MACNET_BASE_PTR+MAC_NET_OFFSET);
 #endif
 
+  eir = enet-> eir;
+  eimr = enet->eimr;
+  
   /* Determine the cause of the interrupt. */
-  ulEvent = enet->eir & enet->eimr;
+  ulEvent = eir & eimr;
   enet->eir = ulEvent;
 
   /*Tx Process: only aware of a complete eth frame*/
   if( /*( ulEvent & MACNET_EIR_TXB_MASK ) ||*/ ( ulEvent & MACNET_EIR_TXF_MASK ) )
   {    
     /* xmit task completed, go for next one! */
-    //xSemaphoreGiveFromISR( xTxENETSemaphore, &xHighPriorityTaskWoken );
+    mico_rtos_set_semaphore( &xTxENETSemaphore);
   }
   /*Rx process*/
   if( /*( ulEvent & MACNET_EIR_RXB_MASK ) ||*/ ( ulEvent & MACNET_EIR_RXF_MASK ) )
   {    
     /* A packet has been received.  Wake the handler task. */
-    //xSemaphoreGiveFromISR( xRxENETSemaphore, &xHighPriorityTaskWoken );
-	  mico_ethif_notify_irq();
+    mico_rtos_set_semaphore( &xRxENETSemaphore);
+    mico_ethif_notify_irq();
   }
   /*Error handling*/
   if (ulEvent & ( MACNET_EIR_UN_MASK | MACNET_EIR_RL_MASK | MACNET_EIR_LC_MASK | MACNET_EIR_EBERR_MASK | MACNET_EIR_BABT_MASK | MACNET_EIR_BABR_MASK | MACNET_EIR_EBERR_MASK ) )
@@ -992,8 +736,19 @@ portBASE_TYPE xHighPriorityTaskWoken = pdFALSE;
     prvInitialiseENETBuffers();
     enet->rdar = MACNET_RDAR_RDAR_MASK;
   }
+}
 
-  //portEND_SWITCHING_ISR( xHighPriorityTaskWoken );
+
+void ENET_Transmit_IRQHandler(){
+  vENETISRHandler();
+}
+
+void ENET_Receive_IRQHandler(){
+  vENETISRHandler();
+}
+
+void ENET_Error_IRQHandler() {
+  vENETISRHandler();
 }
 
 #endif /* 0 */

@@ -285,6 +285,28 @@ static void mico_mfg_test(void)
   mico_thread_sleep(MICO_NEVER_TIMEOUT);
 }
 
+////--------------------------------------------------------------------///
+typedef struct {
+    int dhcpEnable;  // 1=dhcp mode. 0=static IP address mode
+    char local_ip_addr[16]; // valid whetn dhcpEnable ==0.  string like "192.168.1.100"
+    char net_mask[16];      // valid whetn dhcpEnable ==0. string like "255.255.255.0"
+    char gateway_ip_addr[16]; // valid whetn dhcpEnable ==0.  string like "192.168.1.1"
+    char dnsServer_ip_addr[16]; // valid whetn dhcpEnable ==0.  string like "192.168.1.1"
+} ip_settings_t;
+static void add_ethernet(void)
+{
+    ip_settings_t ipset;
+    char mac[6] = {0xc8, 0x93, 0x46, 0x00, 0x01, 0x02};
+     
+
+    memset(&ipset, 0, sizeof(ipset));
+    ipset.dhcpEnable = 1;
+    mico_ethif_init("dm9161c", mac, &ipset);
+    // Eth_Link_up();
+    mico_ethif_up();  //改成在IRQ中触发
+}
+//-------------------------------------------------------------------------
+
 int application_start(void)
 {
   OSStatus err = kNoErr;
@@ -293,7 +315,7 @@ int application_start(void)
   mico_rtc_time_t time;
   char wifi_ver[64];
   mico_log_trace(); 
-
+#if 0
   /*Read current configurations*/
   context = ( mico_Context_t *)malloc(sizeof(mico_Context_t) );
   require_action( context, exit, err = kNoMemoryErr );
@@ -316,10 +338,12 @@ int application_start(void)
 
   err = MICOAddNotification( mico_notify_Stack_Overflow_ERROR, (void *)micoNotify_StackOverflowErrHandler );
   require_noerr( err, exit ); 
-
+#endif
   /*wlan driver and tcpip init*/
   MicoInit();
   MicoSysLed(true);
+  add_ethernet();
+  sleep(10000);
   mico_log("Free memory %d bytes", MicoGetMemoryInfo()->free_memory) ; 
 
   /* Enter test mode, call a build-in test function amd output on STDIO */
@@ -356,6 +380,8 @@ int application_start(void)
   err = MICOAddNotification( mico_notify_WIFI_STATUS_CHANGED, (void *)micoNotify_WifiStatusHandler );
   require_noerr( err, exit ); 
 
+    add_ethernet();
+  
   if(context->flashContentInRam.micoSystemConfig.configured != allConfigured){
     mico_log("Empty configuration. Starting configuration mode...");
 

@@ -520,7 +520,7 @@
       <name>IJET_ID</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>3</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -717,6 +717,24 @@
         <option>
           <name>OCJetEmuParams</name>
           <state>1</state>
+        </option>
+        <option>
+          <name>IjetPreferETB</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IjetTraceSettingsList</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IjetTraceSizeList</name>
+          <version>0</version>
+          <state>2</state>
+        </option>
+        <option>
+          <name>FlashBoardPathSlave</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -1259,8 +1277,8 @@
         </option>
         <option>
           <name>CCXds100InterfaceList</name>
-          <version>1</version>
-          <state>7</state>
+          <version>3</version>
+          <state>10</state>
         </option>
         <option>
           <name>BoardFile</name>
@@ -1304,6 +1322,10 @@
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\OpenRTOS\OpenRTOSPlugin.ewplugin</file>
         <loadFlag>1</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\Quadros\Quadros_EWB7_Plugin.ewplugin</file>
+        <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\SafeRTOS\SafeRTOSPlugin.ewplugin</file>
@@ -1865,7 +1887,7 @@
       <name>IJET_ID</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>3</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -2062,6 +2084,24 @@
         <option>
           <name>OCJetEmuParams</name>
           <state>1</state>
+        </option>
+        <option>
+          <name>IjetPreferETB</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IjetTraceSettingsList</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IjetTraceSizeList</name>
+          <version>0</version>
+          <state>2</state>
+        </option>
+        <option>
+          <name>FlashBoardPathSlave</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -2604,8 +2644,8 @@
         </option>
         <option>
           <name>CCXds100InterfaceList</name>
-          <version>1</version>
-          <state>7</state>
+          <version>3</version>
+          <state>10</state>
         </option>
         <option>
           <name>BoardFile</name>
@@ -2649,6 +2689,10 @@
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\OpenRTOS\OpenRTOSPlugin.ewplugin</file>
         <loadFlag>1</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\Quadros\Quadros_EWB7_Plugin.ewplugin</file>
+        <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\SafeRTOS\SafeRTOSPlugin.ewplugin</file>
@@ -3210,7 +3254,7 @@
       <name>IJET_ID</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>3</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -3407,6 +3451,24 @@
         <option>
           <name>OCJetEmuParams</name>
           <state>1</state>
+        </option>
+        <option>
+          <name>IjetPreferETB</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IjetTraceSettingsList</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IjetTraceSizeList</name>
+          <version>0</version>
+          <state>2</state>
+        </option>
+        <option>
+          <name>FlashBoardPathSlave</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -3949,8 +4011,8 @@
         </option>
         <option>
           <name>CCXds100InterfaceList</name>
-          <version>1</version>
-          <state>7</state>
+          <version>3</version>
+          <state>10</state>
         </option>
         <option>
           <name>BoardFile</name>
@@ -3994,6 +4056,10 @@
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\OpenRTOS\OpenRTOSPlugin.ewplugin</file>
         <loadFlag>1</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\Quadros\Quadros_EWB7_Plugin.ewplugin</file>
+        <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\SafeRTOS\SafeRTOSPlugin.ewplugin</file>
@@ -4555,7 +4621,7 @@
       <name>IJET_ID</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>3</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -4752,6 +4818,24 @@
         <option>
           <name>OCJetEmuParams</name>
           <state>1</state>
+        </option>
+        <option>
+          <name>IjetPreferETB</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IjetTraceSettingsList</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IjetTraceSizeList</name>
+          <version>0</version>
+          <state>2</state>
+        </option>
+        <option>
+          <name>FlashBoardPathSlave</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -5294,8 +5378,8 @@
         </option>
         <option>
           <name>CCXds100InterfaceList</name>
-          <version>1</version>
-          <state>7</state>
+          <version>3</version>
+          <state>10</state>
         </option>
         <option>
           <name>BoardFile</name>
@@ -5339,6 +5423,10 @@
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\OpenRTOS\OpenRTOSPlugin.ewplugin</file>
         <loadFlag>1</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\Quadros\Quadros_EWB7_Plugin.ewplugin</file>
+        <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\SafeRTOS\SafeRTOSPlugin.ewplugin</file>
@@ -5900,7 +5988,7 @@
       <name>IJET_ID</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>3</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>0</debug>
         <option>
@@ -6097,6 +6185,24 @@
         <option>
           <name>OCJetEmuParams</name>
           <state>1</state>
+        </option>
+        <option>
+          <name>IjetPreferETB</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IjetTraceSettingsList</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IjetTraceSizeList</name>
+          <version>0</version>
+          <state>2</state>
+        </option>
+        <option>
+          <name>FlashBoardPathSlave</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -6639,8 +6745,8 @@
         </option>
         <option>
           <name>CCXds100InterfaceList</name>
-          <version>1</version>
-          <state>7</state>
+          <version>3</version>
+          <state>10</state>
         </option>
         <option>
           <name>BoardFile</name>
@@ -6684,6 +6790,10 @@
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\OpenRTOS\OpenRTOSPlugin.ewplugin</file>
         <loadFlag>1</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\Quadros\Quadros_EWB7_Plugin.ewplugin</file>
+        <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\SafeRTOS\SafeRTOSPlugin.ewplugin</file>
@@ -6814,7 +6924,7 @@
         </option>
         <option>
           <name>OCLastSavedByProductVersion</name>
-          <state>7.10.3.6927</state>
+          <state>7.40.2.8567</state>
         </option>
         <option>
           <name>OCDownloadAttachToProgram</name>
@@ -7245,7 +7355,7 @@
       <name>IJET_ID</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>3</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -7443,6 +7553,24 @@
           <name>OCJetEmuParams</name>
           <state>1</state>
         </option>
+        <option>
+          <name>IjetPreferETB</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IjetTraceSettingsList</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IjetTraceSizeList</name>
+          <version>0</version>
+          <state>2</state>
+        </option>
+        <option>
+          <name>FlashBoardPathSlave</name>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -7551,7 +7679,7 @@
         </option>
         <option>
           <name>CCJLinkInterfaceRadio</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OCJLinkAttachSlave</name>
@@ -7984,8 +8112,8 @@
         </option>
         <option>
           <name>CCXds100InterfaceList</name>
-          <version>1</version>
-          <state>7</state>
+          <version>3</version>
+          <state>10</state>
         </option>
         <option>
           <name>BoardFile</name>
@@ -8029,6 +8157,10 @@
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\OpenRTOS\OpenRTOSPlugin.ewplugin</file>
         <loadFlag>1</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\Quadros\Quadros_EWB7_Plugin.ewplugin</file>
+        <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\SafeRTOS\SafeRTOSPlugin.ewplugin</file>
@@ -8590,7 +8722,7 @@
       <name>IJET_ID</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>3</version>
+        <version>6</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -8787,6 +8919,24 @@
         <option>
           <name>OCJetEmuParams</name>
           <state>1</state>
+        </option>
+        <option>
+          <name>IjetPreferETB</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IjetTraceSettingsList</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IjetTraceSizeList</name>
+          <version>0</version>
+          <state>2</state>
+        </option>
+        <option>
+          <name>FlashBoardPathSlave</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -9329,8 +9479,8 @@
         </option>
         <option>
           <name>CCXds100InterfaceList</name>
-          <version>1</version>
-          <state>7</state>
+          <version>3</version>
+          <state>10</state>
         </option>
         <option>
           <name>BoardFile</name>
@@ -9374,6 +9524,10 @@
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\OpenRTOS\OpenRTOSPlugin.ewplugin</file>
         <loadFlag>1</loadFlag>
+      </plugin>
+      <plugin>
+        <file>$TOOLKIT_DIR$\plugins\rtos\Quadros\Quadros_EWB7_Plugin.ewplugin</file>
+        <loadFlag>0</loadFlag>
       </plugin>
       <plugin>
         <file>$TOOLKIT_DIR$\plugins\rtos\SafeRTOS\SafeRTOSPlugin.ewplugin</file>

@@ -34,7 +34,7 @@
 #include "MicoPlatform.h"
 #include "platform_common_config.h"
 
-
+//#if 0
 const unsigned char wifi_firmware_image[] = {
     /*@-type@*/
     0, 0, 0, 0, 73, 150, 0, 0, 13, 149, 0, 0, 13, 149, 0, 0, 13, 149, 0,
@@ -12195,7 +12195,8 @@ const unsigned char wifi_firmware_image[] = {
     50, 48, 52, 54, 102, 102, 50, 98, 10, 0, 125, 0
     /*@+type@*/
 };
-
+//#endif 
+//unsigned char * wifi_firmware_image=(void *)DRIVER_START_ADDRESS;
 
 
 const unsigned long wifi_firmware_image_size = (unsigned long) sizeof(wifi_firmware_image);

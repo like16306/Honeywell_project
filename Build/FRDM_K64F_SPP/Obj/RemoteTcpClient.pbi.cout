@@ -1,82 +1,90 @@
-"C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Demos\COM.MXCHIP.SPP\RemoteTcpClient.c"
+"C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Demos\COM.MXCHIP.SPP\RemoteTcpClient.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Library\support
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Library\support
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Demos\COM.MXCHIP.SPP
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Demos\COM.MXCHIP.SPP
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\MICO
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\MICO
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\hal
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\hal
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\startup
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\startup
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\driver
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\driver
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\device
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\device
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\boards
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\boards
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\utilities
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\utilities
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Vendor\Freescale\MK64FxxL12
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Vendor\Freescale\MK64FxxL12
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\include
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\include
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\External
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\External
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\include
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\include
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Common\Cortex-M4
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Common\Cortex-M4
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Common\Drivers\spi_flash
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Common\Drivers\spi_flash
 -I
-C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CMSIS\Include
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\RJ45\FSL Ethernet Port\enet
 -I
-C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\inc
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\RJ45\FSL Ethernet Port
 -I
-C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\inc\c
+D:\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform
+D:\IAR Systems\Embedded Workbench 7.2\arm\inc
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Library\support
+D:\IAR Systems\Embedded Workbench 7.2\arm\inc\c
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Demos\COM.MXCHIP.SPP
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\MICO
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Library\support
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Demos\COM.MXCHIP.SPP
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\hal
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\MICO
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\startup
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\driver
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\hal
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\device
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\startup
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\boards
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\driver
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\utilities
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\device
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\Vendor\Freescale\MK64FxxL12
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\boards
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\include
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\utilities
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\External
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\Vendor\Freescale\MK64FxxL12
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\include
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\include
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\Common\Cortex-M4
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\External
 -I
-C:\Users\Jiaqi\Desktop\Github\MICO-Freescale-k22\src\Platform\Common\Drivers\spi_flash
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\include
 -I
-C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CMSIS\Include
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\Common\Cortex-M4
+-I
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\Common\Drivers\spi_flash
+-I
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\RJ45\FSL Ethernet Port\enet
+-I
+C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\RJ45\FSL Ethernet Port
+-I
+D:\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -DDEBUG=1
 -DCPU_MK64FN1M0VMD12=1
 -DIAR=1
@@ -219,15 +227,19 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CMSIS\Include
 -D__JMP_BUF_ELEMENT_TYPE__=unsigned long long int
 -D__JMP_BUF_NUM_ELEMENTS__=16
 -D__TID__=0xcf60
--D__VER__=7020005
--D__BUILD_NUMBER__=7591
+-D__VER__=7040002
+-D__BUILD_NUMBER__=8542
 -D__IAR_SYSTEMS_ICC__=8
 -D__LITTLE_ENDIAN__=1
 -D__BOOL_TYPE__=unsigned char
+-D__BOOL_SIZE__=1
 -D__WCHAR_T_TYPE__=unsigned short int
 -D__WCHAR_T_SIZE__=2
 -D__WCHAR_T_MAX__=0xffff
 -D__DEF_PTR_MEM__=__data
+-D__DEF_PTR_SIZE__=4
+-D__CODE_MEMORY_LIST3__(_P1,_P2)=__CODE_MEM_HELPER3__(__code, 0, _P1, _P2)
+-D__DATA_MEMORY_LIST3__(_P1,_P2)=__DATA_MEM_HELPER3__(__data, 0, _P1, _P2)
 -D__DATA_MEM0__=__data
 -D__DATA_MEM0_POINTER_OK__=1
 -D__DATA_MEM0_UNIQUE_POINTER__=1
@@ -243,8 +255,14 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CMSIS\Include
 -D__CODE_MEM0_POINTER_OK__=1
 -D__CODE_MEM0_UNIQUE_POINTER__=1
 -D__CODE_MEM0_VAR_OK__=1
+-D__CODE_PTR_MEMORY_LIST3__(_P1,_P2)=__CODE_PTR_MEM_HELPER3__(__code, 0, _P1, _P2)
+-D__DATA_PTR_MEMORY_LIST3__(_P1,_P2)=__DATA_PTR_MEM_HELPER3__(__data, 0, _P1, _P2)
+-D__VAR_MEMORY_LIST3__(_P1,_P2)=__VAR_MEM_HELPER3__(__data, 0, _P1, _P2)
 -D__HEAP_MEM0__=0
+-D__HEAP_MEMORY_LIST3__(_P1,_P2)=__HEAP_MEM_HELPER3__(__data, 0, _P1, _P2)
 -D__MULTIPLE_HEAPS__=0
+-D__TOPM_DATA_MEMORY_LIST3__(_P1,_P2)=
+-D__TOPP_DATA_MEMORY_LIST3__(_P1,_P2)=__TOPP_DATA_MEM_HELPER3__(__data, 0, _P1, _P2)
 -D__DEF_HEAP_MEM__=__data
 -D__PRAGMA_PACK_ON__=1
 -D__MULTIPLE_INHERITANCE__=1
@@ -282,18 +300,18 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CMSIS\Include
 -D__HAS_JOINED_TYPES__=1
 -D__HAS_LOCATED_DECLARATION__=1
 -D__HAS_LOCATED_WITH_INIT__=1
--D__IAR_COMPILERBASE__=593926
--D__DATE__="Mar 31 2015"
--D__TIME__="16:15:00"
+-D__IAR_COMPILERBASE__=594435
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1
+-D__STDC_NO_VLA__=1
+-D__STDC_NO_ATOMICS__=1
 -D__EDG_IA64_ABI=1
 -D__EDG_IA64_ABI_VARIANT_CTORS_AND_DTORS_RETURN_THIS=1
 -D__EDG_IA64_ABI_USE_INT_STATIC_INIT_GUARD=1
 -D__EDG_TYPE_TRAITS_ENABLED=1
 -D__EDG__=1
--D__EDG_VERSION__=403
+-D__EDG_VERSION__=409
 -D__EDG_SIZE_TYPE__=unsigned int
 -D__EDG_PTRDIFF_TYPE__=int
 -D__EDG_DELTA_TYPE=int
@@ -308,10 +326,10 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CMSIS\Include
 -D__EDG_BSD=0
 -D__EDG_SYSV=0
 -D__EDG_ANSIC=1
--D__EDG_CPP0X_IL_EXTENSIONS_SUPPORTED=1
--D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\INC\c\DLib_Config_Full.h"
--D_DLIB_CONFIG_FILE_STRING="C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 7.0\\arm\\INC\\c\\DLib_Config_Full.h"
--D__VERSION__="IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM"
+-D__EDG_CPP11_IL_EXTENSIONS_SUPPORTED=1
+-D_DLIB_CONFIG_FILE_HEADER_NAME="D:\IAR Systems\Embedded Workbench 7.2\arm\INC\c\DLib_Config_Full.h"
+-D_DLIB_CONFIG_FILE_STRING="D:\\IAR Systems\\Embedded Workbench 7.2\\arm\\INC\\c\\DLib_Config_Full.h"
+-D__VERSION__="IAR ANSI C/C++ Compiler V7.40.2.8542/W32 for ARM"
 -D_VA_DEFINED=
 -D__CODE_MEMORY_LIST1__()=__CODE_MEM_HELPER1__(__code, 0 )
 -D__CODE_MEMORY_LIST2__(_P1)=__CODE_MEM_HELPER2__(__code, 0 ,  _P1 )

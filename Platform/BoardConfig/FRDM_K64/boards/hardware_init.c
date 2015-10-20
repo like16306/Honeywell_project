@@ -58,6 +58,7 @@
 #include "board.h"
 #include "fsl_clock_manager.h"
 #include "fsl_debug_console.h"
+#include "fsl_interrupt_manager.h"
 #include <stdbool.h>
 
 void hardware_init(void) {
@@ -68,8 +69,12 @@ void hardware_init(void) {
   for (i = 0; i < HW_PORT_INSTANCE_COUNT; i++) {
     CLOCK_SYS_EnablePortClock(i);
   }
+  
+  SCB->SHCSR |= 7<<16;  
+    
+  INT_SYS_EnableIRQ(83);
+  INT_SYS_EnableIRQ(84);
 
-  configure_enet_pins(0u);
   configure_gpio_pins(0u);
   configure_gpio_pins(1u);
   configure_gpio_pins(2u);
@@ -79,6 +84,10 @@ void hardware_init(void) {
   configure_sdhc_pins(0u);
   configure_spi_pins(0u);
   configure_uart_pins(0u);
+  configure_enet_pins(0u);
+  
+  /*Like add     config a pin for ENET PHY Interrupt        */
+  PORTB_PCR9 =  (PORT_PCR_PE_MASK|PORT_PCR_PS_MASK|PORT_PCR_MUX(1)|PORT_PCR_IRQC(8));
   RTC_CR = 0x0000;   //disable RTC OSC
 }
 
@@ -95,6 +104,12 @@ void dbg_uart_init(void)
     configure_uart_pins(BOARD_DEBUG_UART_INSTANCE);
 
     DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, BOARD_DEBUG_UART_BAUD, kDebugConsoleUART);
+}
+
+void UsageFault_Handler(){
+  
+    asm("mrs r1, MSP");
+    //while(1){}
 }
 /*!
 ** @}

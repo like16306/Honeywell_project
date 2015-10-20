@@ -138,7 +138,7 @@ to exclude the API function. */
 #define configMAX_SYSCALL_INTERRUPT_PRIORITY 	( 5 << (8 - configPRIO_BITS) )
 
 /*FSL: using multiple buffer for a more efficent use of memory at rx stage by ENET-MAC*/
-#define configENET_RX_SINGLE_BUFFER     0/*1: one buffer per frame - 0: multiple buffers per frame*/
+#define configENET_RX_SINGLE_BUFFER     1/*1: one buffer per frame - 0: multiple buffers per frame*/
 
 #if configENET_RX_SINGLE_BUFFER
 #define configENET_RX_BUFFER_SIZE	1520

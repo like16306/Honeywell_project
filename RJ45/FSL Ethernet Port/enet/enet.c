@@ -111,7 +111,7 @@ enet_hash_address(const uint8_t* addr)
  *  pa  Physical (Hardware) Address for the selected FEC
  */
 void
-enet_set_address (int ch, const uint8_t *pa)
+enet_set_address (int ch, uint8_t *pa)
 {
     uint8_t crc;
     volatile macnet_t *enet;

@@ -11,6 +11,8 @@
 #include "k64_gpio.h"
 #include "core_cm4.h"
 #include "string.h"
+#include "eth_phy.h"
+#include "FreeRTOSConfig.h"
 
 /******************************************************
  *                      Macros
@@ -256,6 +258,23 @@ void PORTA_IRQHandler(void)
 }
 void PORTB_IRQHandler(void)
 {
+  
+    /*******ETH PHY LINK Check   Like Add*********/
+    int phy_reg_temp;
+    mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
+    if(phy_reg_temp & PHY_INTCTL_LINK_DOWN_FLAG){ 
+        
+        //phy_reg_temp = 1;
+        mico_ethif_down();
+    
+    }else if(phy_reg_temp & PHY_INTCTL_LINK_UP_FLAG){
+    
+        //phy_reg_temp = 1;
+        mico_ethif_up();
+    }
+    //mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
+    //eth_phy_reg_dump(MACNET_PORT, configPHY_ADDRESS);
+    /**************************/
     gpio_irq();
 }
 void PORTC_IRQHandler(void)

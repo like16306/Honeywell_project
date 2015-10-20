@@ -1,3 +1,3 @@
 
-int periph_clk_khz=111;
+int periph_clk_khz=60000;
 

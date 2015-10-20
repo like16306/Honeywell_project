@@ -57,6 +57,7 @@ eth_phy_reg_dump(int, int);
 #define PHY_MICR                    (0x11)
 #define PHY_MISR                    (0x12)
 #define PHY_PAGESEL                 (0x13)
+#define PHY_INTCTL                  (0x1B)
 
 /*TSI-EVB definition: National Semiconductor*/
 #define PHY_PHYCR2                  (0x1C)
@@ -161,6 +162,14 @@ eth_phy_reg_dump(int, int);
 #define PHY_PHYCTRL2_DATA_SCRAM_DIS (0x0001)
 
 
+/* Bit definitions and macros for PHY_INTCTL */
+#define PHY_INTCTL_LINK_DOWN_ENABLE            (0x0400)
+#define PHY_INTCTL_LINK_UP_ENABLE              (0x0100)
+#define PHY_INTCTL_LINK_DOWN_FLAG              (0x0004)  
+#define PHY_INTCTL_LINK_UP_FLAG                (0x0001)
+
+
+
 /* Bit definitions of PHY_PHYCTRL2_OP_MOD_MASK */
 #define PHY_PHYCTRL2_OP_MOD_SHIFT             2
 #define PHY_PHYCTRL2_MODE_OP_MOD_STILL_NEG    0
@@ -168,7 +177,7 @@ eth_phy_reg_dump(int, int);
 #define PHY_PHYCTRL2_MODE_OP_MOD_100MBPS_HD   2
 #define PHY_PHYCTRL2_MODE_OP_MOD_10MBPS_FD    5
 #define PHY_PHYCTRL2_MODE_OP_MOD_100MBPS_FD   6
-
+ 
 
 /*******************************************************************/
 
