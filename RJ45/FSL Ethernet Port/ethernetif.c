@@ -159,7 +159,9 @@ extern int line_down_reset;
  * @param netif the already initialized lwip network interface structure
  *        for this ethernetif
  */
-void mico_ethif_low_level_init(char *mac)
+
+//#pragma location = ".text2"
+void mico_ethif_low_level_init(char *mac)@".text2"
 {
   int usData, phy_reg_temp;
 
@@ -754,13 +756,13 @@ ISR_PREFIX void vENETISRHandler( void )
     mico_ethif_notify_irq();
   }
   /*Error handling*/
-  if (ulEvent & ( MACNET_EIR_UN_MASK | MACNET_EIR_RL_MASK | MACNET_EIR_LC_MASK | MACNET_EIR_EBERR_MASK | MACNET_EIR_BABT_MASK | MACNET_EIR_BABR_MASK | MACNET_EIR_EBERR_MASK ) )
-  {
+  //if (ulEvent & ( MACNET_EIR_UN_MASK | MACNET_EIR_RL_MASK | MACNET_EIR_LC_MASK | MACNET_EIR_EBERR_MASK | MACNET_EIR_BABT_MASK | MACNET_EIR_BABR_MASK | MACNET_EIR_EBERR_MASK ) )
+  //{
     /*(void)ulEvent;*/
     /* Sledge hammer error handling. */
-    prvInitialiseENETBuffers();
-    enet->rdar = MACNET_RDAR_RDAR_MASK;
-  }
+    //prvInitialiseENETBuffers();
+    //enet->rdar = MACNET_RDAR_RDAR_MASK;
+  //}
 }
 
 

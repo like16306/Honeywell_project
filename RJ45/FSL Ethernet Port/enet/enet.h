@@ -10,6 +10,14 @@
 
 #include "nbuf.h"
 
+
+/*!
+ * @name Constants and macros for entire ENET_GALR register
+ */
+/*@{*/
+
+
+
 /********INTERFACE**********/
 typedef enum {
   mac_mii,
@@ -89,6 +97,12 @@ enet_start (int ch);
 int 
 enet_wait_for_frame_receive(int,int);
 
+void 
+Enet_Add_Multicast_Group(const uint8_t* addr);
+
+
+void 
+Enet_Leave_Multicast_Group(const uint8_t* addr);
 
 
 /********************************************************************/

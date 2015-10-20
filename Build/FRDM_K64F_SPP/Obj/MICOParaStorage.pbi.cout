@@ -1,44 +1,44 @@
-"C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\MICO\MICOParaStorage.c"
+"C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\MICO\MICOParaStorage.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Library\support
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Library\support
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Demos\COM.MXCHIP.SPP
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Demos\COM.MXCHIP.SPP
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\MICO
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\MICO
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\hal
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\hal
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\startup
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\startup
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\driver
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\driver
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\device
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\device
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\boards
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\boards
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\utilities
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\BoardConfig\FRDM_K64\utilities
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Vendor\Freescale\MK64FxxL12
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Vendor\Freescale\MK64FxxL12
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\include
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\include
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\External
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\External
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\include
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\include
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Common\Cortex-M4
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Common\Cortex-M4
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Common\Drivers\spi_flash
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform\Common\Drivers\spi_flash
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\RJ45\FSL Ethernet Port\enet
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\RJ45\FSL Ethernet Port
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\RJ45\FSL Ethernet Port
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\RJ45\FSL Ethernet Port\enet
 -I
 D:\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -I
@@ -46,43 +46,43 @@ D:\IAR Systems\Embedded Workbench 7.2\arm\inc
 -I
 D:\IAR Systems\Embedded Workbench 7.2\arm\inc\c
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Library\support
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Library\support
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Demos\COM.MXCHIP.SPP
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Demos\COM.MXCHIP.SPP
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\MICO
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\MICO
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\hal
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\hal
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\startup
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\startup
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\driver
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\driver
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\device
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\device
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\boards
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\boards
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\utilities
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\BoardConfig\FRDM_K64\utilities
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\Vendor\Freescale\MK64FxxL12
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\Vendor\Freescale\MK64FxxL12
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\include
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\include
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\External
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\External
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\include
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\include
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\Common\Cortex-M4
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\Common\Cortex-M4
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform\Common\Drivers\spi_flash
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform\Common\Drivers\spi_flash
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\RJ45\FSL Ethernet Port\enet
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\RJ45\FSL Ethernet Port
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\RJ45\FSL Ethernet Port
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\RJ45\FSL Ethernet Port\enet
 -I
 D:\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -DDEBUG=1

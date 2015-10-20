@@ -2,7 +2,7 @@
 define symbol m_interrupts_start       = 0x00000000;
 define symbol m_interrupts_end         = 0x000003FF;      
 
-define symbol m_text_start             = 0x00000410;
+define symbol m_text_start             = 0x0000A410;
 define symbol m_text_end               = 0x000FFFFF;      
 
 define symbol m_interrupts_ram_start   = 0x1FFF0000;
@@ -17,8 +17,8 @@ define symbol m_data_end               = 0x2002FEFF;
 define symbol code_flash_start         = 0x2002FF00;    /************************************/
 define symbol code_flash_end           = 0x2002FFFF;
 
-define symbol FlashConfig_start__      = 0x00000400;
-define symbol FlashConfig_end__        = 0x0000040f;
+define symbol FlashConfig_start__      = 0x0000A400;
+define symbol FlashConfig_end__        = 0x0000A40f;
 
 /*-Sizes-*/
 define symbol __size_cstack__          = 0x200;

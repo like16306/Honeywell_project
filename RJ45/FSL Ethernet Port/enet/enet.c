@@ -66,6 +66,55 @@ enet_duplex (int ch, ENET_DUPLEX duplex)
     }
 }
 
+
+/***********AddMulticastGroup****************/
+/*
+* addr: The multicast group address
+*/
+void Enet_Add_Multicast_Group(const uint8_t* addr){
+  
+    uint32_t crcValue;
+    
+#if (MACNET_PORT==0)
+  volatile macnet_t *enet = (macnet_t *)MACNET_BASE_PTR;
+#else
+  volatile macnet_t *enet = (macnet_t *)(MACNET_BASE_PTR+MAC_NET_OFFSET);
+#endif
+  
+    crcValue = enet_hash_address(addr);
+    if(crcValue >= 32)
+        enet->gaur |= (uint32_t)(1 << (crcValue - 32));
+    else
+        enet->galr |= (uint32_t)(1 << crcValue);
+}
+  
+  
+/***********AddMulticastGroup****************/
+/*
+* addr: The multicast group address
+*/    
+void Enet_Leave_Multicast_Group(const uint8_t* addr){
+  
+    uint32_t crcValue;
+    
+#if (MACNET_PORT==0)
+  volatile macnet_t *enet = (macnet_t *)MACNET_BASE_PTR;
+#else
+  volatile macnet_t *enet = (macnet_t *)(MACNET_BASE_PTR+MAC_NET_OFFSET);
+#endif
+  
+    crcValue = enet_hash_address(addr);
+    
+    if (crcValue >= 32)
+      { 
+        enet->gaur &= ~(uint32_t)(1 << (crcValue - 32));
+      }
+        else
+      {
+        enet->galr &= ~(uint32_t)(1 << crcValue);
+      }
+}    
+
 /********************************************************************/
 /*
  * Generate the hash table settings for the given address

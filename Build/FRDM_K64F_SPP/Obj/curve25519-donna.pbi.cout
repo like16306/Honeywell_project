@@ -1,20 +1,20 @@
-"C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\External\Curve25519\curve25519-donna.c"
+"C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\External\Curve25519\curve25519-donna.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Library\inc
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Library\inc
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\STM32F2xx_StdPeriph_Driver\inc
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\STM32F2xx_StdPeriph_Driver\inc
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Platform
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Library\support
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Library\support
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\MICO
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\MICO
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Demos\COM.Apple.HomeKit
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\..\..\..\Demos\COM.Apple.HomeKit
 -I
 D:\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -I
@@ -22,19 +22,19 @@ D:\IAR Systems\Embedded Workbench 7.2\arm\inc
 -I
 D:\IAR Systems\Embedded Workbench 7.2\arm\inc\c
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Library\inc
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Library\inc
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\STM32F2xx_StdPeriph_Driver\inc
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\STM32F2xx_StdPeriph_Driver\inc
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Platform
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Platform
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Library\support
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Library\support
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\MICO
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\MICO
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src
 -I
-C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Demos\COM.Apple.HomeKit
+C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Demos\COM.Apple.HomeKit
 -I
 D:\IAR Systems\Embedded Workbench 7.2\arm\CMSIS\Include
 -DDEBUG=1

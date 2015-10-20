@@ -61,7 +61,8 @@
 #include "fsl_interrupt_manager.h"
 #include <stdbool.h>
 
-void hardware_init(void) {
+
+void hardware_init(void){
 
   uint8_t i;
   
@@ -82,7 +83,7 @@ void hardware_init(void) {
   configure_gpio_pins(1u);
   configure_gpio_pins(2u);
   configure_gpio_pins(4u);
-  configure_i2c_pins(0u);
+  //configure_i2c_pins(0u);
   //configure_i2c_pins(1u);
   configure_sdhc_pins(0u);
   configure_spi_pins(0u);

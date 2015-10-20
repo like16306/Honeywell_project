@@ -103,19 +103,31 @@ static char *__strdup(char *src)
     memcpy(dst, src, len);
   return dst;
 }
+static uint32_t get_if_ip(int interface)
+{
+	uint32_t ip=0, gw, mask;
+	IPStatusTypedef para;
+	
+	if (0==ip_address_get(2, &ip, &mask, &gw)) { // ethernet if is up
+		ip = htonl(ip);
+	} else {
+		micoWlanGetIPStatus(&para, interface);
+		ip = htonl(inet_addr(para.ip));
+	}
+
+	return ip;
+}
 
 void process_dns_questions(int fd, dns_message_iterator_t* iter )
 {
   dns_name_t name;
   dns_question_t question;
   dns_message_iterator_t response;
-  IPStatusTypedef para;
   int a = 0;
   int question_processed;
   uint32_t myip;
-  
-  micoWlanGetIPStatus(&para, _interface);
-  myip = htonl(inet_addr(para.ip));
+
+  myip = get_if_ip(_interface);
   if(myip == 0) {
     _debug_out("UDP multicast test: IP error.\r\n");
     return;
@@ -185,11 +197,9 @@ static void mdns_process_query(int fd, dns_name_t* name,
                                dns_question_t* question, dns_message_iterator_t* source )
 {
   dns_message_iterator_t response;
-  IPStatusTypedef para;
   uint32_t myip;
   
-  micoWlanGetIPStatus(&para, _interface);
-  myip = htonl(inet_addr(para.ip));
+  myip = get_if_ip(_interface);
   
   memset( &response, 0, sizeof(dns_message_iterator_t) );
   
@@ -553,9 +563,8 @@ void mfi_bonjour_send(int fd)
 {
   dns_message_iterator_t response;
   uint32_t myip;
-  IPStatusTypedef para;
-  micoWlanGetIPStatus(&para, _interface);
-  myip = htonl(inet_addr(para.ip));
+
+  myip = get_if_ip(_interface);
   if(myip == 0) return;
   int b = 0;
     
@@ -586,10 +595,9 @@ void mfi_bonjour_remove_record(int fd)
 {
   dns_message_iterator_t response;
   uint32_t myip;
-  IPStatusTypedef para;
-  micoWlanGetIPStatus(&para, _interface);
-  myip = htonl(inet_addr(para.ip));
   int b = 0;
+  
+  myip = get_if_ip(_interface);
 
   for ( b = 0; b < available_service_count; ++b ){
     if(dns_create_message( &response, 512 )){

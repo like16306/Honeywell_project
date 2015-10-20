@@ -161,7 +161,7 @@ to exclude the API function. */
 #define configENET_TX_BUFFER_SIZE	1520/*no need to reduce this number*/
 
 #define configENET_MAX_PACKET_SIZE      1520
-#define configUSE_PROMISCUOUS_MODE	0
+#define configUSE_PROMISCUOUS_MODE	1
 #define configUSE_MII_MODE              0/*FSL: using RMII mode*/
 #define configETHERNET_INPUT_TASK_STACK_SIZE ( 256 )
 #define configETHERNET_INPUT_TASK_PRIORITY ( configMAX_PRIORITIES - 1 )
