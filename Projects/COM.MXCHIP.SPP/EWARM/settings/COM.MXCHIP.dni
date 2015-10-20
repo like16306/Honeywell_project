@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-747147469
+Checksum=-1289653148
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -37,6 +37,8 @@ DisableInterrupts=0
 MultiCoreRunAll=0
 [ArmDriver]
 EnableCache=1
+[Breakpoints]
+Count=0
 [struct_types]
 Fmt0=macnet_t-eir	4	0
 [watch_formats]
@@ -45,16 +47,6 @@ Fmt1={W}1:phy_reg_temp[0]	4	0
 [Trace1]
 Enabled=0
 ShowSource=1
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\ethernetif.c}.423.5" 0 0 1 "" 0 "" 0
-Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\ethernetif.c}.503.3" 0 0 1 "" 0 "" 0
-Bp2=_ 0 "EMUL_CODE" "0x00041C4A" 0 0 1 "" 0 "" 0
-Bp3=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\MICO\MICOEntrance.c}.467.3" 0 0 1 "" 0 "" 0
-Bp4=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_gpio.c}.273.9" 0 0 1 "" 0 "" 0
-Bp5=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_gpio.c}.268.9" 0 0 1 "" 0 "" 0
-Count=6
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -62,14 +54,26 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Aliases]
-A0=_ "C:\Freescale\KSDK_1.0.0\platform\hal\gpio\fsl_gpio_hal.c" ""
-A1=_ "C:\Freescale\KSDK_1.0.0\platform\system\clock\MK64F12\fsl_clock_K64F12.c" ""
-A2=_ "C:\Users\bobo\Documents\WICED\Wiced-SDK-2.4.0\WICED-SDK\Wiced\RTOS\FreeRTOS\ver7.1.0\Source\portable\IAR\ARM_CM4F\portasm.s" ""
-A3=_ "C:\wh\support\Honeywell\MICO-Freescale(20150804)_rj45\MICO-Freescale-k22\src\MICO\MICOEntrance.c" ""
-Count=4
-SuppressDialog=1
 [CallStackLog]
 Enabled=0
 [CallStackStripe]
 ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\ethernetif.c}.452.7" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\ethernetif.c}.538.6" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "0x00041C4A" 0 0 1 "" 0 "" 0
+Bp3=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\MICO\MICOEntrance.c}.357.3" 0 0 1 "" 0 "" 0
+Bp4=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_gpio.c}.275.9" 0 0 1 "" 0 "" 0
+Bp5=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_gpio.c}.281.9" 0 0 1 "" 0 "" 0
+Count=6
+[Aliases]
+A0=_ "C:\Freescale\KSDK_1.0.0\platform\hal\gpio\fsl_gpio_hal.c" ""
+A1=_ "C:\Freescale\KSDK_1.0.0\platform\hal\mcg\fsl_mcg_hal.c" ""
+A2=_ "C:\Freescale\KSDK_1.0.0\platform\system\clock\MK64F12\fsl_clock_K64F12.c" ""
+A3=_ "C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\MICO\MICOEntrance.c" ""
+A4=_ "C:\Users\bobo\Documents\WICED\Wiced-SDK-2.4.0\WICED-SDK\Wiced\RTOS\FreeRTOS\ver7.1.0\Source\portable\IAR\ARM_CM4F\portasm.s" ""
+A5=_ "C:\wh\support\Honeywell\MICO-Freescale(20150804)_rj45\MICO-Freescale-k22\src\MICO\MICOEntrance.c" ""
+Count=6
+SuppressDialog=1

@@ -148,6 +148,10 @@ void mico_ethif_low_level_init(char *mac);
 int mico_ethif_low_level_output(uint8_t *buf, int len);
 int mico_ethif_low_level_input(uint8_t *buf, int maxlen);
 
+
+/* If Line down after reset*/
+extern int line_down_reset;
+
 /**
  * In this function, the hardware should be initialized.
  * Called from ethernetif_init().
@@ -218,10 +222,30 @@ void mico_ethif_low_level_init(char *mac)
     mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_PHYIDR1, &usData );
         
   } while( usData == 0xffff );
+ 
+  
+  
+  
+  /**********************************/
+  /*    Enable PHY Link Up-Down  Interrupt  *****************Like add     */
+  mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_BMSR, &phy_reg_temp);
+  
+  if(!(phy_reg_temp & 0x00000004)){
+    line_down_reset = 1;
+    mii_write( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, ( PHY_INTCTL_LINK_DOWN_ENABLE | PHY_INTCTL_LINK_UP_ENABLE ) );
+    mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
+    PORTB_PCR9 |= PORT_PCR_ISF_MASK;
+    msleep(500);
+    INT_SYS_EnableIRQ(60);        //place PHY and GPIO in a certain status
+    return;
+  }
+  /************************************/
 
+  
+  
   /* Start auto negotiate. */
   mii_write( MACNET_PORT, configPHY_ADDRESS, PHY_BMCR, ( PHY_BMCR_AN_RESTART | PHY_BMCR_AN_ENABLE ) );
-
+  mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp); //add
   /* Wait for auto negotiate to complete. */
   do
   {
@@ -363,6 +387,7 @@ void mico_ethif_low_level_init(char *mac)
   /* Indicate that there have been empty receive buffers produced */
   enet->rdar = MACNET_RDAR_RDAR_MASK;
   
+ 
   
   /*    Enable PHY Link Up-Down  Interrupt  *****************Like add     */
   mii_write( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, ( PHY_INTCTL_LINK_DOWN_ENABLE | PHY_INTCTL_LINK_UP_ENABLE ) );

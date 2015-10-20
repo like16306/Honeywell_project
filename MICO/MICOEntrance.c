@@ -285,6 +285,9 @@ static void mico_mfg_test(void)
   mico_thread_sleep(MICO_NEVER_TIMEOUT);
 }
 
+
+
+
 ////--------------------------------------------------------------------///
 typedef struct {
     int dhcpEnable;  // 1=dhcp mode. 0=static IP address mode
@@ -293,6 +296,7 @@ typedef struct {
     char gateway_ip_addr[16]; // valid whetn dhcpEnable ==0.  string like "192.168.1.1"
     char dnsServer_ip_addr[16]; // valid whetn dhcpEnable ==0.  string like "192.168.1.1"
 } ip_settings_t;
+
 static void add_ethernet(void)
 {
     ip_settings_t ipset;
@@ -303,9 +307,11 @@ static void add_ethernet(void)
     ipset.dhcpEnable = 1;
     mico_ethif_init("dm9161c", mac, &ipset);
     // Eth_Link_up();
-    mico_ethif_up();  //改成在IRQ中触发
+    //mico_ethif_up();  //in IRQ to trigger
 }
 //-------------------------------------------------------------------------
+
+
 
 int application_start(void)
 {
@@ -315,7 +321,7 @@ int application_start(void)
   mico_rtc_time_t time;
   char wifi_ver[64];
   mico_log_trace(); 
-#if 0
+#if 1
   /*Read current configurations*/
   context = ( mico_Context_t *)malloc(sizeof(mico_Context_t) );
   require_action( context, exit, err = kNoMemoryErr );
@@ -342,8 +348,12 @@ int application_start(void)
   /*wlan driver and tcpip init*/
   MicoInit();
   MicoSysLed(true);
+  
+  /**********************add ethernet**********************/
   add_ethernet();
-  sleep(10000);
+  //sleep(5000);
+  /*********************************************************/
+  
   mico_log("Free memory %d bytes", MicoGetMemoryInfo()->free_memory) ; 
 
   /* Enter test mode, call a build-in test function amd output on STDIO */
@@ -380,7 +390,9 @@ int application_start(void)
   err = MICOAddNotification( mico_notify_WIFI_STATUS_CHANGED, (void *)micoNotify_WifiStatusHandler );
   require_noerr( err, exit ); 
 
-    add_ethernet();
+  
+  /*************add ethernet********Why add twice?***********/
+  //add_ethernet();
   
   if(context->flashContentInRam.micoSystemConfig.configured != allConfigured){
     mico_log("Empty configuration. Starting configuration mode...");

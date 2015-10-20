@@ -14,6 +14,7 @@
 #include "eth_phy.h"
 #include "FreeRTOSConfig.h"
 
+
 /******************************************************
  *                      Macros
  ******************************************************/
@@ -65,6 +66,9 @@ static gpio_port_irq_data_t gpio_irq_data[GPIO_PORTS];
 #if 0 /* currently unused */
 static wiced_bool_t             gpio_initted = WICED_FALSE;
 #endif
+
+
+extern int line_down_reset;
 
 static const GPIO_MemMapPtr gpio_list[] =
 {
@@ -261,15 +265,23 @@ void PORTB_IRQHandler(void)
   
     /*******ETH PHY LINK Check   Like Add*********/
     int phy_reg_temp;
+    volatile int a;
     mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);
-    if(phy_reg_temp & PHY_INTCTL_LINK_DOWN_FLAG){ 
+    
+    a = (phy_reg_temp & PHY_INTCTL_LINK_DOWN_FLAG);
+    if(a){ 
         
-        //phy_reg_temp = 1;
+        
         mico_ethif_down();
     
-    }else if(phy_reg_temp & PHY_INTCTL_LINK_UP_FLAG){
+    }
     
-        //phy_reg_temp = 1;
+    a= (phy_reg_temp & PHY_INTCTL_LINK_UP_FLAG);
+    if(a){       
+        if(line_down_reset){    //if link down when power on, reset the MCU
+          line_down_reset = 0;
+          NVIC_SystemReset();         
+        }
         mico_ethif_up();
     }
     //mii_read( MACNET_PORT, configPHY_ADDRESS, PHY_INTCTL, &phy_reg_temp);

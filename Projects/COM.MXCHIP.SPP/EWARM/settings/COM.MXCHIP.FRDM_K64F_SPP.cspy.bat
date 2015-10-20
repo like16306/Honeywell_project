@@ -25,7 +25,7 @@ if not "%1" == "" goto debugFile
 
 @echo on 
 
-"D:\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.general.xcl" --backend -f "C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.driver.xcl" 
+"D:\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.general.xcl" --backend -f "C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.general.xcl" "--debug_file=%1" --backend -f "C:\Users\b45112\Desktop\MICO-Freescale(20150807)_rj45\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.driver.xcl" 
+"D:\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.general.xcl" "--debug_file=%1" --backend -f "C:\Users\b45112\Desktop\MICO-Freescale(20150826_milestone)\MICO-Freescale-k22\src\Projects\COM.MXCHIP.SPP\EWARM\settings\COM.MXCHIP.FRDM_K64F_SPP.driver.xcl" 
 
 @echo off 
 :end

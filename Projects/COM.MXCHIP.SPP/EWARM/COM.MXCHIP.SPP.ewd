@@ -7913,7 +7913,7 @@
         <option>
           <name>CCPEMicroInterfaceList</name>
           <version>0</version>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCPEMicroResetDelay</name>

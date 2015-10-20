@@ -74,17 +74,20 @@ void hardware_init(void) {
     
   INT_SYS_EnableIRQ(83);
   INT_SYS_EnableIRQ(84);
-
+  NVIC_SetPriority(83, 1);
+  NVIC_SetPriority(84, 1);
+	
+  configure_enet_pins(0u);	
   configure_gpio_pins(0u);
   configure_gpio_pins(1u);
   configure_gpio_pins(2u);
   configure_gpio_pins(4u);
   configure_i2c_pins(0u);
-  configure_i2c_pins(1u);
+  //configure_i2c_pins(1u);
   configure_sdhc_pins(0u);
   configure_spi_pins(0u);
   configure_uart_pins(0u);
-  configure_enet_pins(0u);
+  
   
   /*Like add     config a pin for ENET PHY Interrupt        */
   PORTB_PCR9 =  (PORT_PCR_PE_MASK|PORT_PCR_PS_MASK|PORT_PCR_MUX(1)|PORT_PCR_IRQC(8));
@@ -109,7 +112,6 @@ void dbg_uart_init(void)
 void UsageFault_Handler(){
   
     asm("mrs r1, MSP");
-    //while(1){}
 }
 /*!
 ** @}

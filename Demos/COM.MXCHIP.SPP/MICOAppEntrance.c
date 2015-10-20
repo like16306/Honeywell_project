@@ -45,8 +45,6 @@ void appRestoreDefault_callback(mico_Context_t *inContext)
   inContext->flashContentInRam.appConfig.remoteServerPort = DEFAULT_REMOTE_SERVER_PORT;
 }
 
-
-
 OSStatus MICOStartApplication( mico_Context_t * const inContext )
 {
   app_log_trace();
@@ -76,9 +74,7 @@ OSStatus MICOStartApplication( mico_Context_t * const inContext )
   err = mico_rtos_create_thread(NULL, MICO_APPLICATION_PRIORITY, "UART Recv", uartRecv_thread, STACK_SIZE_UART_RECV_THREAD, (void*)inContext );
   require_noerr_action( err, exit, app_log("ERROR: Unable to start the uart recv thread.") );
 
-////add
- 
-  
+  //add_ethernet();
   /*Local TCP server thread*/
  if(inContext->flashContentInRam.appConfig.localServerEnable == true){
    err = mico_rtos_create_thread(NULL, MICO_APPLICATION_PRIORITY, "Local Server", localTcpServer_thread, STACK_SIZE_LOCAL_TCP_SERVER_THREAD, (void*)inContext );

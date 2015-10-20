@@ -957,6 +957,11 @@
       <archiveVersion>0</archiveVersion>
       <data/>
     </settings>
+    <settings>
+      <name>Coder</name>
+      <archiveVersion>0</archiveVersion>
+      <data/>
+    </settings>
   </configuration>
   <configuration>
     <name>MICO_EVB_1</name>
@@ -1917,6 +1922,11 @@
       <archiveVersion>0</archiveVersion>
       <data/>
     </settings>
+    <settings>
+      <name>Coder</name>
+      <archiveVersion>0</archiveVersion>
+      <data/>
+    </settings>
   </configuration>
   <configuration>
     <name>Nucleo_411RE</name>
@@ -2872,6 +2882,11 @@
       <archiveVersion>0</archiveVersion>
       <data/>
     </settings>
+    <settings>
+      <name>Coder</name>
+      <archiveVersion>0</archiveVersion>
+      <data/>
+    </settings>
   </configuration>
   <configuration>
     <name>EMW3165</name>
@@ -3824,6 +3839,11 @@
     </settings>
     <settings>
       <name>BILINK</name>
+      <archiveVersion>0</archiveVersion>
+      <data/>
+    </settings>
+    <settings>
+      <name>Coder</name>
       <archiveVersion>0</archiveVersion>
       <data/>
     </settings>
@@ -4783,6 +4803,11 @@
       <archiveVersion>0</archiveVersion>
       <data/>
     </settings>
+    <settings>
+      <name>Coder</name>
+      <archiveVersion>0</archiveVersion>
+      <data/>
+    </settings>
   </configuration>
   <configuration>
     <name>FRDM_K64F_SPP</name>
@@ -5018,7 +5043,7 @@
         <option>
           <name>CCAllowList</name>
           <version>1</version>
-          <state>00000000</state>
+          <state>11111110</state>
         </option>
         <option>
           <name>CCDebugInfo</name>
@@ -5103,8 +5128,8 @@
           <state>$PROJ_DIR$\..\..\..\Platform\include</state>
           <state>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4</state>
           <state>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\spi_flash</state>
-          <state>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet</state>
           <state>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port</state>
+          <state>$PROJ_DIR$\..\..\..\RJ45\FSL Ethernet Port\enet</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -5124,7 +5149,7 @@
         </option>
         <option>
           <name>CCOptLevel</name>
-          <state>0</state>
+          <state>3</state>
         </option>
         <option>
           <name>CCOptStrategy</name>
@@ -5133,7 +5158,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>0</state>
+          <state>3</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -5743,6 +5768,11 @@
     </settings>
     <settings>
       <name>BILINK</name>
+      <archiveVersion>0</archiveVersion>
+      <data/>
+    </settings>
+    <settings>
+      <name>Coder</name>
       <archiveVersion>0</archiveVersion>
       <data/>
     </settings>
@@ -6700,6 +6730,11 @@
     </settings>
     <settings>
       <name>BILINK</name>
+      <archiveVersion>0</archiveVersion>
+      <data/>
+    </settings>
+    <settings>
+      <name>Coder</name>
       <archiveVersion>0</archiveVersion>
       <data/>
     </settings>
