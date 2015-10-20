@@ -1,0 +1,2466 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3829271287</fileChecksum>
+  <configuration>
+    <name>EMW3161</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>EMW3162</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>EMW3165</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>FRDM_K64F_SPP</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\HomeProtocolParse.h</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\LocalTcpServer.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\HomeProtocolParse.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOAppDefine.h</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOAppEntrance.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOConfigDelegate.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOBonjour.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\RemoteTcpClient.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MicoDefaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\Curve25519\curve25519-donna.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\SppProtocol.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\UartRecv.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverGpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\arraylist.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\debug.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_object.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_tokener.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_util.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\linkhash.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\printbuf.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\hkdf.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\hmac.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha1.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha224-256.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha384-512.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\usha.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverAdc.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverMFiAuth.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverI2c.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverUart.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverPwm.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverRng.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverRtc.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverSpi.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MICO.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\LocalTcpServer.o</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverSpi.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_dma.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_fmc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOParaStorage.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_edma_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\crt0_IAR.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_axbs.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\UartRecv.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\fsl_bitaccess.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_uart.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\TimeUtils.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverWdg.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\json_object.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_edma_driver.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\printbuf.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_wdog.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_edma_driver.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\linkhash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\Common.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_dspi_irq.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_rtc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_dmamux_hal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverWdg.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_edma_driver.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_dspi_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\wlan_platform.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverAdc.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_mcg.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_interrupt_manager.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cm4.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\k64_spi.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICONotificationCenter.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_edma_request.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOConfigDelegate.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_smc.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha-private.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\LocalTcpServer.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\pin_mux.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_sim_features.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverUart.o</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_tokener.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_ewm.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SocketUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\wlan_platform.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_dmamux.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\AESUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_interrupt_features.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Exe\COM.MXCHIP.SPP.out</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_inttypes.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOAppEntrance.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\hardware_init.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_dspi_irq.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_driver.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_debug_console.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\edma.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_edma_features.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\platform_assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_gpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\sha1.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_gpio_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_clock_K64F12.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\hkdf.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\json_util.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SHAUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\usha.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\json_util.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\startup.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\system_MK64F12.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverAdc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_mpu.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\boards\gpio_pins.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverFlash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\hkdf.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\StringUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOSystemMonitor.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MDNSUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\K64FN1Mxxx12_flash.icf</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverGpio.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_aips.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\system_MK64F12.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOBonjour.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_rfvbat.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tlv.a</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\ksdk_platform.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_vref.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICONTPClient.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SecurityUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\WPS.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\startup\startup.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\UartRecv.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\mem_tools.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\sha224-256.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\List\COM.MXCHIP.SPP.map</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_dspi_master_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\HomeProtocolParse.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SecurityUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\k64_spi.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SppProtocol.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\k64_gpio.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\utilities\mem_tools.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_common.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_enet.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\TimeUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SppProtocol.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\EasyLink.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_edma_driver.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\RemoteTcpClient.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\spi_flash\spi_flash.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_ftm.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_sim.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\hardware_init.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\usha.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_edma_common.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_driver.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\AESUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOParaStorage.o</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICONotificationCenter.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverSpi.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_crc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_nv.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_clock_manager.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\flash_kinetisRamFunc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\ksdk_platform.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\URLUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\include\PlatformLogging.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SocketUtils.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yfuns.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverI2c.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_os_abstraction_bm.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverFlash.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\flash_kinetis.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_edma_common.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_spi.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_features.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\read_wifi_firmware.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_adc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_cmp.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\debug.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_object.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\linkhash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_irq.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_irq.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\StringUtils.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\platform_common_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverRtc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\MDNSUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_lptmr.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_object_private.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_gpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\curve25519-donna.o</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SHAUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_usb.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_edma_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\wwd_bus.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_gpio_features.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_dspi_shared_function.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_dspi_features.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_sdhc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOConfigServer.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\flash_kinetis.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_dac.h</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\SppProtocol.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_hal.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverRtc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverI2c.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\json_object.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_hal.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\config.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\EasyLinkSoftAP.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_port.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_rtc_irq.o</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\TLVUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOConfig.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_cau.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\WPS\WPS.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_mcg_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_llwu.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SHAUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\HTTPUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\Airkiss\Airkiss.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\json_tokener.o</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cm4_simd.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\Curve25519\curve25519-donna.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOBonjour.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\debug.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MDNSUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\edma.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_sim_hal_K64F12.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\gpio_pins.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\fsl_device_registers.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_can.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_gpio_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\platform.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Exe\COM.MXCHIP.SPP.bin</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\HTTPUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOEntrance.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOConfigDelegate.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\ksdk_platform.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\arraylist.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\hmac.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\startup.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\EasyLink.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\sha384-512.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\EasyLinkSoftAP.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\RemoteTcpClient.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\RingBufferUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\hmac.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_rfsys.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverUart.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_pdb.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\read_wifi_firmware.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\boards\pin_mux.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_i2c.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\AESUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\RingBufferUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\gpio_irq.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_usbdcd.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\boards\board.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_pit.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_uart_common.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_spi.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_edma_irq.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\sha224-256.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_osc.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOConfigMenu.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_util.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\EasyLink\EasyLink.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOConfig.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\gpio_pins.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_dmamux_features.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICONTPClient.o</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\TimeUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOAppEntrance.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_mcg_features.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverRng.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\printbuf.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverGpio.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOSystemMonitor.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_mcm.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\WPS.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\linkhash.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\wwd_bus.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\TLVUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\bits.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\URLUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverPwm.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_cmt.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_rng.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\HTTPUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_edma_irq.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_debug_console.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_fb.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\crt0.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverFlash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\Debug.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\WAC\MFi_WAC.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\json_tokener.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\sha384-512.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SecurityUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\SoftAP\EasyLinkSoftAP.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverWdg.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoAES.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoAlgorithm.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MICORTOS.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoPlatform.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoWlan.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoSocket.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\WPS\WPS.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\MICOConfig.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\mxchipWNet_cm4f_spi.a</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\EasyLink\EasyLink.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\SoftAP\EasyLinkSoftAP.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICODefine.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOConfigMenu.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOConfigServer.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOEntrance.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\edma.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICONotificationCenter.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICONTPClient.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOParaStorage.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOSystemMonitor.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\utilities\fsl_debug_console.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\irq_handler\fsl_dspi_irq.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_edma_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_edma_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\irq_handler\fsl_edma_irq.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_edma_driver.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_irq.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\boards\gpio_pins.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\boards\hardware_init.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\utilities\mem_tools.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\boards\pin_mux.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\platform.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\startup\startup.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\startup\startup_MK64F12.s</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\startup\system_MK64F12.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\crt0_IAR.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\MicoDriverMFiAuth.a</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\EMW1062_Driver\read_wifi_firmware.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\EMW1062_Driver\wlan_platform.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\flash_kinetis.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\flash_kinetisRamFunc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\fsl_rtc_irq.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_gpio.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_spi.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\ksdk_freertos_lib.a</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\ksdk_platform.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverAdc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverFlash.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverGpio.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverI2c.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverPwm.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverRng.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverRtc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverSpi.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverUart.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverWdg.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\wwd_bus.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\StringUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\AESUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\HTTPUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\MDNSUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\RingBufferUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SecurityUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SHAUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SocketUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\TimeUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_rcm.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\TLVUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\URLUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\SparkLight.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\SparkLight.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\sha1.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_os_abstraction.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOSystemMonitor.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\pin_mux.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SparkLight.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOConfigMenu.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_edma_common.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\flash_kinetisRamFunc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_edma_driver.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\COM.MXCHIP.pbd</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\k64_gpio.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\startup_MK64F12.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SparkLight.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\crt0_IAR.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\startup\system_MK64F12.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\arraylist.o</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\debug.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\mem_tools.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOConfigServer.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\curve25519-donna.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\platform.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\HomeProtocolParse.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\SocketUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\URLUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverPwm.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_port_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_ftfe.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\StringUtils.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_port_features.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_sim_hal.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MicoDriverRng.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\RingBufferUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\edma.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\flash_kinetis.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocalelist.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_pmc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOConfigMenu.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\TLVUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\printbuf.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICOEntrance.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\arraylist.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\platform.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\utilities\fsl_debug_console.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_common.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\device\MK64F12\MK64F12_i2s.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\MICONotificationCenter.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Obj\fsl_rtc_irq.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\LocalTcpServer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 333 155 195 226 32 258 182 335 444 105 437 148 136 30 281 59 310 3 332 214 60 65 29 87 342 222 0 324 336 334 8 104 292 78 121 270 51 115 299 254 49 426 445 149 31 330 28 35 313 293 201 12 34 33 27 186 15 249 264 449 298</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 324 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 104 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 342 15 313 249 310 264 293 195 449 87 298 3 222 182 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\HomeProtocolParse.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 428</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 147</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65 49 59 78 72 404 226 445 334 292 299 15 29 258 293 182 136 121 270 51 115 155 426 149 333 332 30 32 281 313 342 222 324 172 444 214 60 254 105 437 148 335 8 31 330 28 310 87 195 3 35 104 201 336 12 34 33 27 186 249 264 449 298</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 222 342 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 182 172 404</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOAppEntrance.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 302</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 336 59 155 27 226 258 334 35 444 105 437 148 136 201 449 199 3 214 60 104 324 34 264 222 15 292 78 121 270 51 115 299 254 49 426 445 149 65 8 333 12 33 186 249 195 298 342 335 332 30 31 29 330 32 28 281 313 310 293 87 45</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 342 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 3 199 222</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOConfigDelegate.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 262</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 313 65 59 334 226 72 45 342 60 155 258 291 214 35 333 15 444 105 437 148 136 8 34 293 324 201 294 3 222 199 292 78 121 270 51 115 299 254 49 426 445 149 104 12 33 186 336 310 87 195 30 31 29 330 32 28 281 335 332 249 264 449 298</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 334 30 281 12 31 34 29 33 330 27 32 186 28 294 342 35 335 336 332 15 313 249 310 264 293 195 449 87 298 3 222 291 199</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOBonjour.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 247</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 131</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 155 72 45 226 104 324 34 59 258 264 199 35 444 105 437 148 136 172 3 214 60 201 336 27 449 203 15 292 78 121 270 51 115 299 254 49 426 445 149 65 8 333 334 12 33 186 249 195 298 342 335 332 30 31 29 330 32 28 281 313 310 293 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 342 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 3 172 203 199</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\RemoteTcpClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 162</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 271</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 214 59 72 172 60 226 155 15 29 258 293 222 444 105 437 148 136 333 332 30 32 281 313 342 182 292 78 121 270 51 115 299 254 49 426 445 149 324 335 8 31 330 28 310 87 195 3 65 35 104 201 336 334 12 34 33 27 186 249 264 449 298</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 342 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 222 182 172</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\Curve25519\curve25519-donna.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 425</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 207</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51 72 246 444 155 270 115 299 226 105 136 214 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 136 72 226 60 115 299 270 51 155 246 214 444 105</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\SppProtocol.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 159</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 152</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 334 214 298 72 186 59 155 60 226 254 49 445 8 12 258 249 182 78 444 426 149 3 333 33 195 222 324 172 292 136 121 270 51 115 299 105 437 148 342 35 104 201 336 34 27 264 449 65 15 335 332 30 31 29 330 32 28 281 313 310 293 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 222 342 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 182 172</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\UartRecv.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 141</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 334 121 298 51 186 270 59 155 172 136 115 72 254 226 49 445 8 12 258 249 222 292 78 299 426 149 3 333 33 195 342 214 444 60 105 437 148 65 35 104 201 324 336 34 27 264 449 15 335 332 30 31 29 330 32 28 281 313 310 293 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 342 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 222 172</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\arraylist.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 451</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 420</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 155 72 313 136 60 226 105 444 264 270 230 51 115 299</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 230 136 72 226 60 115 299 270 51 155 444 105 313 264</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\debug.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 194</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51 226 72 136 254 115 78 444 155 270 299 230 45 60 105 249</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 230 78 72 226 60 115 299 270 51 155 254 136 444 105 249</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\json_object.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 228</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 299 249 72 226 195 136 95 78 444 310 205 155 270 51 115 230 298 449 264 293 254 60 105 435 214</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 230 78 72 226 60 115 299 270 51 155 254 136 298 444 105 249 449 310 264 95 435 214 195 205 293</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\json_tokener.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 326</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 243</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 444 264 226 155 136 87 105 456 249 95 72 49 445 230 78 298 121 313 449 195 293 254 60 270 426 149 65 51 115 299 437 148 435 214</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 230 78 72 226 60 115 299 270 51 155 254 136 298 121 437 49 149 426 148 65 445 444 105 456 313 249 449 264 95 435 214 195 87 293</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\json_util.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 114</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49 313 72 456 195 445 449 136 173 293 155 226 435 78 298 444 121 249 95 87 254 60 270 426 149 65 214 230 51 115 299 105 437 148</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 230 78 72 226 60 115 299 270 51 155 254 136 298 456 444 105 173 121 437 49 149 426 148 65 445 313 249 449 95 435 214 195 87 293</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\linkhash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 196</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 226 298 299 136 310 444 45 456 155 270 51 115 78 254 60 105</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78 72 226 60 115 299 270 51 155 254 444 105 136 298 456 310</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\printbuf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 305</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 449 155 105 136 313 226 72 78 444 45 249 254 60 230 270 51 115 299</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 230 78 72 226 60 115 299 270 51 155 254 136 444 105 313 249 449</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\hkdf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 123</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 136 105 226 444 60 155 270 421 214 51 115 299</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 421 214 72 226 60 115 299 270 51 444 155 105 136</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\hmac.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 265</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 273</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 226 72 299 214 270 51 115 421 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 421 214 72 226 60 115 299 270 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\sha1.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 405</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 214 82 226 299 421 72 270 51 115 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 421 214 72 226 60 115 299 270 51 82</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\sha224-256.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 289</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 143</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 421 299 226 82 214 270 51 115 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 421 214 72 226 60 115 299 270 51 82</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\sha384-512.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 268</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 327</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82 421 226 299 214 270 51 115 72 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 421 214 72 226 60 115 299 270 51 82</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\usha.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 167</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 113</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 226 299 214 72 270 51 115 421 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 421 214 72 226 60 115 299 270 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Build\FRDM_K64F_SPP\Exe\COM.MXCHIP.SPP.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 144</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 259</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 127 280 420 43 207 422 267 269 442 443 412 101 99 188 54 319 233 156 100 68 223 197 253 98 123 273 147 260 53 243 114 153 76 378 134 196 36 126 142 302 131 295 262 410 424 118 122 306 184 370 432 304 224 38 86 52 450 457 300 171 125 339 408 427 55 191 271 272 138 107 143 327 240 89 417 152 266 416 124 117 50 312 141 180 113 70 139 311 221 37 133 244</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 144 94</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\WPS\WPS.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 309</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 195 335 155 105 258 444 437 148 136 28 318 333 72 226 31 310 334 329 332 214 60 8 330 3 87 431 172 199 237 324 336 104 292 78 121 270 51 115 299 254 49 426 445 149 65 30 29 32 281 342 35 313 293 45 201 12 34 33 27 186 15 249 264 449 298</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 324 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 104 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 172 342 15 313 249 310 264 293 195 449 87 298 3 199 318 431 237 329</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\MICOConfig.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 235</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 295</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 270 148 155 136 299 437 214 444 226 51 115 72 292 78 121 60 149 65 59 254 105 49 426 445 8</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\EasyLink\EasyLink.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 160</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 267</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 254 201 445 59 324 8 72 226 258 136 115 49 449 35 318 336 121 270 51 27 292 342 334 333 104 78 299 426 34 264 172 199 182 294 329 335 332 214 444 60 155 105 437 148 12 33 186 15 249 195 298 149 65 30 31 29 330 32 28 281 3 313 310 293 87 45 431</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 324 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 104 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 172 342 15 313 249 310 264 293 195 449 87 298 3 199 318 431 182 294 329</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\SoftAP\EasyLinkSoftAP.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 231</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 269</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 199 335 155 105 27 72 444 437 148 136 258 292 333 226 449 35 334 182 332 214 60 34 324 264 172 201 318 203 329 336 8 104 78 121 270 51 115 299 254 49 426 445 149 12 33 186 15 249 195 298 65 30 31 29 330 32 28 281 342 3 313 310 293 87 45 431</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 324 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 104 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 172 342 15 313 249 310 264 293 195 449 87 298 3 199 318 431 182 203 329</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOConfigMenu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 447</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 410</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 333 155 293 226 201 444 105 437 148 136 313 291 258 59 214 60 310 87 195 15 8 104 292 78 121 270 51 115 299 254 49 426 445 149 65 249 264 449 298 324</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 324 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 104 15 313 249 310 264 293 195 449 87 298 291</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOConfigServer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 218</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 424</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 332 214 59 201 72 33 258 172 60 226 155 449 182 318 335 333 444 105 437 148 136 12 186 324 264 35 342 336 334 8 104 292 78 121 270 51 115 299 254 49 426 445 149 34 27 15 249 195 298 65 30 31 29 330 32 28 281 3 313 310 293 87 431</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 324 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 104 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 342 15 313 249 310 264 293 195 449 87 298 3 182 318 431 172</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOEntrance.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 261</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 450</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 264 12 258 329 155 226 445 294 72 60 186 172 325 59 33 214 270 426 281 8 332 334 342 407 242 34 27 444 254 49 3 449 45 429 201 237 199 51 115 299 30 31 29 330 32 28 292 136 78 121 105 437 148 149 65 35 104 335 249 195 298 324 15 333 336 313 310 293 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 429 72 226 60 115 299 270 51 155 334 59 214 292 136 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 342 324 333 104 35 335 336 332 15 313 249 310 264 293 195 449 87 298 3 172 407 294 329 237 325 199 242</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\edma.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 251</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 442</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 279 72 44 317 248 79 255 91 290 283 214 225 47 292 105 64 316 40 73 232 81 63 155 60 226 192 236 220 88 164 239 119 285 274 217 48 56 75 419 216 145 245 97 406 102 154 270 51 115 299 413 168 42 103 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 200 297 185 136 444 67 190</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 444 72 226 60 115 299 270 51 155 105 102 214 413 168 103 255 225 75 216 63 200 145 245 419 192 47 136 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 79 42 292 97 64 297 248 406 185 67 190 154</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICONotificationCenter.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 457</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33 195 72 258 214 333 59 172 35 60 226 155 65 3 444 105 437 148 136 8 334 12 186 249 298 342 324 15 292 78 121 270 51 115 299 254 49 426 445 149 104 201 336 34 27 264 449 335 332 30 31 29 330 32 28 281 313 310 293 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 172 342 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICONTPClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 137</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 300</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 324 59 258 155 104 34 264 226 35 429 444 105 437 148 136 182 214 60 65 201 336 27 449 342 172 334 292 78 121 270 51 115 299 254 49 426 445 149 3 8 333 12 33 186 249 195 298 15 335 332 30 31 29 330 32 28 281 313 310 293 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 342 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 182 172 429</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOParaStorage.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 171</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 226 104 72 155 34 264 60 324 59 258 3 214 201 35 444 105 437 148 136 336 27 449 334 15 292 78 121 270 51 115 299 254 49 426 445 149 65 8 333 12 33 186 249 195 298 342 335 332 30 31 29 330 32 28 281 313 310 293 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 342 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOSystemMonitor.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 307</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 125</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 264 226 72 59 258 60 155 65 29 324 332 214 334 335 333 444 105 437 148 136 30 32 281 449 407 336 8 104 292 78 121 270 51 115 299 254 49 426 445 149 31 330 28 15 249 195 298 35 201 12 34 33 27 186 342 3 313 310 293 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 324 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 104 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 407 342 15 313 249 310 264 293 195 449 87 298 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\utilities\fsl_debug_console.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 320</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51 72 434 255 225 400 47 453 270 292 175 308 189 63 248 226 115 256 157 455 276 62 135 214 78 454 299 254 155 97 190 129 193 39 321 206 204 176 446 132 165 209 216 145 245 406 439 45 136 67 177 183 60 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 109 85 200 185 238 303 252</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78 72 226 60 115 299 270 51 155 254 136 453 214 67 97 292 190 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 454 248 406 185 177 238 303 439 85 252 109 183</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\irq_handler\fsl_dspi_irq.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 99</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 214 176 255 47 39 209 200 225 72 129 206 132 103 60 193 321 204 446 165 226 213 256 175 157 434 455 308 276 400 62 189 135 270 215 79 292 51 115 299 146 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 216 145 245 63 136 155 69 64 97 413 168 42 297</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 97 72 226 60 115 299 270 51 292 213 255 225 214 75 216 63 200 145 245 419 192 47 136 155 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 146 69 215 413 168 103 79 42 64 297</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_edma_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 411</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 188</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119 225 220 48 419 226 51 192 164 274 47 255 115 236 88 239 285 217 56 214 270 299 44 316 91 40 279 73 290 232 317 81 283 75 72 103 60 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 216 145 245 155 168 63 200 136</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 168 214 72 226 60 115 299 270 51 103 255 225 75 216 63 200 145 245 419 192 47 136 155 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_edma_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 276 47 157 135 225 72 64 256 455 62 444 299 226 214 175 434 308 400 189 97 136 177 155 270 51 115 79 103 129 193 39 321 206 204 176 446 132 165 209 200 255 292 93 413 74 60 105 168 42 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 216 145 245 63 297 238 109 439 303 85 252</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 136 72 226 60 115 299 270 51 155 444 105 413 214 168 103 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 79 42 292 97 64 297 177 238 303 439 85 252 109 74 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\irq_handler\fsl_edma_irq.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 288</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 319</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 225 236 47 217 63 239 419 145 64 88 285 56 75 216 245 255 214 192 220 164 119 274 48 72 79 60 44 316 91 40 279 73 290 232 317 81 283 136 155 103 413 168 42 226 270 51 115 299 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 200 292 97 297</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 413 214 72 226 60 115 299 270 51 168 103 255 225 75 216 63 200 145 245 419 192 47 136 155 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 79 42 292 97 64 297</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 286</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 156</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 270 276 225 157 135 256 455 62 47 175 434 308 400 189 129 193 39 321 206 204 176 446 132 165 209 299 226 72 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 214 51 115 216 145 245 155 255 60 63 200 136</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 255 225 214 72 226 60 115 299 270 51 75 216 63 200 145 245 419 192 47 136 155 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 169</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 100</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47 44 317 225 72 255 279 248 292 185 91 290 283 214 105 226 316 40 73 232 81 63 97 177 60 155 67 270 190 192 236 220 88 164 239 119 285 274 217 48 56 75 419 216 145 245 93 444 454 74 51 115 299 406 136 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 200 238 109 439 303 85 252</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 97 72 226 60 115 299 270 51 444 155 105 248 214 292 406 136 185 67 190 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 454 177 238 303 439 85 252 109 74 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_edma_driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 270 176 39 209 47 51 214 129 206 132 225 115 226 406 136 72 193 321 204 446 165 439 444 74 299 413 155 256 175 157 434 455 308 276 400 62 189 135 255 97 292 210 177 79 102 60 105 67 185 190 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 200 168 42 103 109 85 93 216 145 245 63 64 297 238 303 252 248</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 97 72 226 60 115 299 270 51 444 155 105 210 214 292 406 136 185 67 190 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 413 168 103 79 42 64 297 177 238 303 439 85 252 109 74 93 102 248</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 229</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 223</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 225 164 270 192 274 226 220 119 48 299 236 88 239 285 217 56 47 97 255 51 115 72 44 316 91 40 279 73 290 232 317 81 283 214 292 190 60 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 63 200 136 67 75 419 216 145 245 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67 97 72 226 60 115 299 270 51 214 292 190 255 225 75 216 63 200 145 245 419 192 47 136 155 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\hal\fsl_uart_irq.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 198</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 197</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 192 274 63 225 164 47 155 255 220 119 48 292 72 236 88 239 285 217 56 75 419 216 145 245 67 60 214 136 97 190 226 44 316 91 40 279 73 290 232 317 81 283 406 270 51 115 299 185 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 200 248</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 248 214 72 226 60 115 299 270 51 292 406 136 155 185 67 97 190 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\boards\gpio_pins.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 296</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 253</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 434 47 225 400 72 60 175 308 189 255 292 226 214 256 157 455 276 62 135 433 270 438 129 193 39 321 206 204 176 446 132 165 209 200 108 136 257 51 115 299 155 97 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 216 145 245 63 212 120</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 120 108 214 72 226 60 115 299 270 51 136 155 292 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\boards\hardware_init.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 166</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 98</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63 225 206 129 132 270 47 226 39 176 209 51 292 193 321 204 446 165 214 115 136 177 256 175 157 434 455 308 276 400 62 189 135 299 216 145 245 433 255 284 453 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 72 60 200 155 278 97 238 85 120 108 257 438 212 109 439 303 252</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 255 225 214 72 226 60 115 299 270 51 75 216 63 200 145 245 419 192 47 136 155 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 284 278 120 108 292 433 97 438 257 212 177 238 303 439 85 252 109 453</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\utilities\mem_tools.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 423</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 142</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 226 72 51 136 155 270 115 214 60 299 154</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 154 136 72 226 60 115 299 270 51 155 214</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\boards\pin_mux.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 408</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 209 39 176 47 129 206 132 225 193 321 204 446 165 270 439 256 175 157 434 455 308 276 400 62 189 135 299 226 72 292 97 433 278 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 214 51 115 216 145 245 155 255 60 63 200 136 438 85 252</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 255 225 214 72 226 60 115 299 270 51 75 216 63 200 145 245 419 192 47 136 155 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 433 97 292 438 439 85 252 278</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\platform.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 452</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 427</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 225 148 47 226 245 330 78 270 59 232 201 155 72 299 8 437 281 258 333 97 316 73 81 216 214 292 334 263 60 31 28 136 255 44 91 279 290 317 283 75 145 444 181 284 254 51 115 30 29 32 121 149 65 278 257 192 236 220 88 164 239 119 285 274 217 48 56 419 105 12 34 33 27 186 49 426 445 324 104 120 108 433 438 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 63 200 212</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78 72 226 60 115 299 270 51 155 254 444 105 334 59 214 292 136 121 437 49 149 426 148 65 445 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 181 324 333 104 263 284 278 120 108 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\startup\startup.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 266</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 270 176 225 39 209 129 206 132 47 193 321 204 446 165 256 175 157 434 455 308 276 400 62 189 135 299 226 72 255 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 214 51 115 216 145 245 155 140 60 63 200 136</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 140 255 225 214 72 226 60 115 299 270 51 75 216 63 200 145 245 419 192 47 136 155 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\startup\startup_MK64F12.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 416</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\BoardConfig\FRDM_K64\startup\system_MK64F12.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 130</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 225 455 256 62 255 72 157 276 135 226 175 434 308 400 189 47 60 129 193 39 321 206 204 176 446 132 165 209 214 270 51 115 299 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 63 200 136 75 419 216 145 245 155</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 214 72 226 60 115 299 270 51 255 225 75 216 63 200 145 245 419 192 47 136 155 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\crt0_IAR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 418</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 201 258 322</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 258 201 322</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\EMW1062_Driver\read_wifi_firmware.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 277</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 191</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115 49 33 72 258 214 254 226 445 59 201 444 270 51 12 186 334 292 136 78 121 299 426 149 155 65 34 27 281 60 105 437 148 8 30 31 29 330 32 28</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 334 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\EMW1062_Driver\wlan_platform.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 254 40 225 47 34 245 226 51 72 59 232 284 115 201 105 97 316 73 81 216 214 292 270 299 258 27 444 155 49 445 255 44 91 279 290 317 283 75 145 334 60 12 33 186 426 278 136 257 192 236 220 88 164 239 119 285 274 217 48 56 419 8 30 31 29 330 32 28 78 121 437 148 149 65 281 120 108 433 438 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 63 200 212</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 214 72 226 60 115 299 270 51 258 201 334 59 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 30 281 12 31 34 29 33 330 27 32 186 28 284 278 120 108 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\flash_kinetis.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 219</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 443</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 256 214 62 225 278 51 226 72 455 270 157 276 135 255 115 108 175 434 308 400 189 47 299 136 257 438 129 193 39 321 206 204 176 446 132 165 209 200 284 120 60 292 433 155 97 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 216 145 245 63 212 187</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 187 284 214 72 226 60 115 299 270 51 278 120 108 136 155 292 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\flash_kinetisRamFunc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 178</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 412</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 256 214 62 225 278 51 226 72 455 270 157 276 135 255 115 108 175 434 308 400 189 47 299 136 257 438 129 193 39 321 206 204 176 446 132 165 209 200 284 120 60 292 433 155 97 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 216 145 245 63 212 187</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 187 284 214 72 226 60 115 299 270 51 278 120 108 136 155 292 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\fsl_rtc_irq.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 458</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 233</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 236 225 214 226 217 47 51 239 245 108 88 285 56 120 115 433 292 192 220 164 119 274 48 216 270 299 97 255 44 316 91 40 279 73 290 232 317 81 283 75 145 278 72 60 136 257 155 438 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 419 284 63 200 212</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 284 214 72 226 60 115 299 270 51 278 120 108 136 155 292 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 415</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 164 226 72 225 258 47 12 214 334 186 136 192 274 59 33 155 278 292 220 119 48 419 444 34 27 426 257 236 88 239 285 217 56 75 284 8 30 31 29 330 32 28 78 121 60 270 105 49 445 201 97 255 44 316 91 40 279 73 290 232 317 81 283 106 51 115 299 254 437 148 149 65 281 120 108 433 438 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 216 145 245 63 200 212</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 106 334 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 284 278 120 108 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\k64_spi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 76</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 232 59 214 270 40 216 47 225 33 51 258 257 255 316 73 81 245 168 103 190 287 12 186 115 72 254 226 49 445 281 136 97 44 91 279 290 317 283 145 63 67 102 284 34 27 444 299 426 149 155 65 120 108 292 192 236 220 88 164 239 119 285 274 217 48 56 75 419 42 413 334 8 30 31 29 330 32 28 78 121 60 105 437 148 201 278 433 438 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 212 200 79 64 297 248 406 185</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 287 334 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 284 278 120 108 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212 413 168 103 79 42 64 297 102 248 406 185 67 190</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\ksdk_platform.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 179</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 134</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 225 270 49 47 59 245 333 72 33 258 232 181 444 60 445 97 316 73 81 216 214 292 201 322 105 12 186 324 104 255 44 91 279 290 317 283 75 145 334 8 284 136 78 121 226 155 426 34 27 278 257 192 236 220 88 164 239 119 285 274 217 48 56 419 263 51 115 299 254 437 148 149 65 30 31 29 330 32 28 281 120 108 433 438 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 63 200 212</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 263 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 258 201 334 8 30 281 12 31 34 29 33 330 27 32 186 28 181 324 104 322 284 278 120 108 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverAdc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 71</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 118</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 28 254 31 292 72 8 330 78 270 105 258 30 29 32 136 121 299 226 155 49 445 201 333 12 34 33 27 186 214 444 51 115 426 334 60 437 148 149 65 281 263 181 324 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 334 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 333 263 181 324 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverFlash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 323</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 122</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 256 214 105 258 270 59 62 225 278 292 72 455 51 437 148 136 29 157 276 135 255 78 115 155 226 30 32 281 175 434 308 400 189 63 47 163 324 444 299 333 8 31 330 28 433 438 129 193 39 321 206 204 176 446 132 165 209 216 145 245 334 201 187 121 60 254 49 426 445 149 65 104 12 34 33 27 186 284 120 108 257 97 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 212 181 200</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 181 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 334 30 281 12 31 34 29 33 330 27 32 186 28 163 187 284 278 120 108 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverGpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 306</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 434 59 47 12 214 254 63 186 72 225 400 201 33 270 105 258 108 175 308 189 136 212 106 284 34 27 444 299 226 155 49 445 334 433 256 157 455 276 62 135 200 333 263 8 30 31 29 330 32 28 292 78 121 51 115 426 120 438 129 193 39 321 206 204 176 446 132 165 209 255 60 437 148 149 65 281 278 257 97 192 44 236 316 220 91 88 40 164 279 239 73 119 290 285 232 274 317 217 81 48 283 56 75 419 216 145 245</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 334 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 333 106 284 278 120 108 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212 263</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverI2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 227</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 184</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 226 155 258 59 78 426 27 292 299 72 149 65 34 281 136 121 270 51 115 254 49 445 12 33 186 334 201 214 444 60 105 437 148 8 30 31 29 330 32 28 333</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 334 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverPwm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 315</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 432</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 226 72 155 8 59 60 330 214 31 28 201 258 444 105 437 148 136 30 29 32 334 292 78 121 270 51 115 299 254 49 426 445 149 65 12 34 33 27 186 281 333</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 334 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverRng.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 440</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 304</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 28 254 31 292 72 8 330 78 270 105 258 30 29 32 136 121 299 226 155 49 445 201 333 12 34 33 27 186 214 444 51 115 426 334 282 60 437 148 149 65 281</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 334 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 333 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverRtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 202</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 224</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51 121 186 270 12 59 201 136 115 72 254 226 49 445 33 258 8 292 78 299 426 149 155 65 34 27 281 334 214 444 60 105 437 148 30 31 29 330 32 28 333</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 334 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverSpi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 174</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 155 115 59 34 214 324 226 426 258 444 51 72 27 201 104 334 292 136 78 121 270 299 254 105 49 445 12 33 186 8 333 60 437 148 149 65 30 31 29 330 32 28 281</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 334 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 324 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverUart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 275</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 274 155 59 65 258 192 74 149 164 47 97 136 72 34 255 220 119 48 63 324 454 121 426 226 27 281 406 292 236 88 239 285 217 56 75 419 225 79 104 444 210 284 78 60 49 445 12 33 186 214 190 44 316 91 40 279 73 290 232 317 81 283 216 145 245 64 103 93 333 334 248 413 177 181 270 51 115 299 254 105 437 148 8 30 31 29 330 32 28 201 67 185 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 297 238 278 257 200 168 42 109 439 303 85 252 120 108 433 438 212</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 334 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 248 406 185 67 97 190 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 454 413 168 103 79 42 64 297 210 177 238 303 439 85 252 109 74 93 284 278 120 108 433 438 257 212 181 324 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\MicoDriverWdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 28 254 31 292 72 8 330 78 270 105 258 30 29 32 136 121 299 226 155 49 445 201 333 12 34 33 27 186 214 444 51 115 426 334 60 437 148 149 65 281 324 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 334 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 30 281 12 31 34 29 33 330 27 32 186 28 333 324 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\vendor\Freescale\MK64FxxL12\wwd_bus.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 211</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 311</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47 12 40 115 108 232 72 59 255 316 73 81 63 49 258 333 278 270 51 226 97 44 91 279 290 317 283 225 186 445 287 284 299 136 257 292 192 236 220 88 164 239 119 285 274 217 48 56 75 419 216 145 245 214 33 106 444 120 60 433 155 438 129 256 193 175 39 157 321 434 206 455 204 308 176 276 446 400 132 62 165 189 209 135 212 201 34 27 426 149 65 334 200 8 30 31 29 330 32 28 78 121 254 105 437 148 281</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 284 214 72 226 60 115 299 270 51 278 120 108 136 155 292 433 97 438 255 225 75 216 63 200 145 245 419 192 47 129 44 256 236 193 316 175 220 39 91 157 88 321 40 434 164 206 279 455 239 204 73 308 119 176 290 276 285 446 232 400 274 132 317 62 217 165 81 189 48 209 283 135 56 257 212 258 201 287 334 59 78 254 444 105 121 437 49 149 426 148 65 445 8 30 281 12 31 34 29 33 330 27 32 186 28 106 333</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\StringUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 436</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 124</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 270 258 214 59 199 60 254 226 49 445 444 426 149 155 324 45 51 115 299 292 136 78 121 105 437 148 333 65 8 104 201</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 199 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\AESUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 280</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49 444 115 150 72 170 254 226 445 201 324 331 214 270 51 104 59 292 136 78 121 299 426 149 155 65 8 60 105 437 148 333 258</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 170 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 150 331</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\HTTPUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 241</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 260</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121 333 270 12 8 72 60 226 65 59 173 334 136 149 186 199 324 336 104 292 78 155 437 148 201 33 258 318 45 335 332 214 444 51 115 299 254 105 49 426 445 34 27 431 35 30 31 29 330 32 28 281</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 324 333 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 8 258 201 104 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 318 431 173 199</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\MDNSUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 250</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 126</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 258 72 226 324 8 59 60 155 214 27 444 105 437 148 136 336 34 203 35 292 78 121 270 51 115 299 254 49 426 445 149 65 333 334 104 201 12 33 186 335 332 30 31 29 330 32 28 281</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 203 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 35 324 333 8 258 201 104 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\RingBufferUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 441</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 272</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 226 270 214 60 65 444 149 8 201 324 59 292 136 78 121 155 437 148 281 51 115 299 254 105 49 426 445 333 258 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 281 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\SecurityUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 328</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 138</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 148 115 444 155 214 226 51 437 59 136 270 299 72 292 78 121 60 149 65 150 254 105 49 426 445</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\SHAUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 240</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 258 45 208 78 226 136 199 59 292 155 437 148 121 60 270 149 65 333 324 214 444 51 115 299 254 105 49 426 445 8 104 201</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 208 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 199</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\SocketUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 430</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 258 299 226 149 59 292 72 201 78 426 155 336 27 35 136 121 270 51 115 254 49 445 104 324 34 214 444 60 105 437 148 65 8 333 334 12 33 186 182 335 332 30 31 29 330 32 28 281</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 182 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\TimeUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 158</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 426 31 226 258 214 115 155 59 51 72 8 335 27 35 444 270 299 254 105 49 445 104 332 30 29 324 292 136 78 121 60 437 148 149 65 333 201 336 334 12 34 33 186 301 173 330 32 281 28</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 301 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 173</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\TLVUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 448</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 312</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72 226 270 214 60 65 444 149 8 201 324 59 292 136 78 121 155 437 148 234 51 115 299 254 105 49 426 445 333 258 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 234 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\URLUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 314</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 180</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149 226 299 65 292 72 78 426 155 8 199 136 121 270 51 115 254 49 445 104 201 45 324 431 214 444 60 105 437 148 333 258 59</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 199 431</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\SparkLight.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 409</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 417</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104 34 264 226 299 72 324 59 258 342 292 78 49 445 15 136 121 270 51 115 155 426 149 201 336 27 449 334 444 35 3 214 60 254 105 437 148 65 8 333 12 33 186 249 195 298 404 335 332 30 31 29 330 32 28 281 313 310 293 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 404 342 59 214 72 226 60 115 299 270 51 292 136 155 78 254 444 105 121 437 49 149 426 148 65 445 324 333 8 258 201 104 35 335 336 332 334 30 281 12 31 34 29 33 330 27 32 186 28 15 313 249 310 264 293 195 449 87 298 3</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>LPCXpresso54102</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>MICO_EVB_1</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Nucleo_411RE</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
